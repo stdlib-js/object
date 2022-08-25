@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench",
+    "@stdlib/boolean": "github:stdlib-js/boolean",
     "@stdlib/number": "github:stdlib-js/number",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
