@@ -31,13 +31,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.0.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Object } from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@esm/index.mjs';
+import { Object } from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.0.1-esm/index.mjs';
 ```
 
 #### ns
@@ -80,7 +80,7 @@ The namespace contains the following:
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.0.1-esm/index.mjs';
 
 console.log( objectKeys( ns ) );
 
