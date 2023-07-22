@@ -1,0 +1,4 @@
+// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import e from"https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-read-only-property@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-function@esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs";var n=t(Object.assign),r=Object.assign,i=Object,o=i.getOwnPropertyDescriptor;var l=n?r:function(e){var t,n,r,l,d,a,j,c;if(null==e)throw new TypeError("Cannot convert undefined or null to object");for(a=i(e),j=1;j<arguments.length;j++)if(null!=(t=arguments[j]))for(d=(r=s(i(t))).length,c=0;c<d;c++)l=r[c],void 0!==(n=o(t,l))&&n.enumerable&&(a[l]=t[l]);return a},d={};e(d,"assign",l),e(d,"Object",i);export{i as Object,l as assign,d as default};
+//# sourceMappingURL=index.mjs.map
