@@ -65,6 +65,7 @@ The namespace contains the following:
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`assign( target, source1[, source2[,...,sourceN]] )`][@stdlib/object/assign]</span><span class="delimiter">: </span><span class="description">copy enumerable own properties from one or more source objects to a target object.</span>
 -   <span class="signature">[`Object( value )`][@stdlib/object/ctor]</span><span class="delimiter">: </span><span class="description">object constructor.</span>
 
 </div>
@@ -172,6 +173,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/object/main/LICENSE
 
 <!-- <toc-links> -->
+
+[@stdlib/object/assign]: https://github.com/stdlib-js/object/tree/main/assign
 
 [@stdlib/object/ctor]: https://github.com/stdlib-js/object/tree/main/ctor
 
