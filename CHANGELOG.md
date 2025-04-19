@@ -4,9 +4,63 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-04-19)
 
-No changes reported for this release.
+<section class="packages">
+
+### Packages
+
+<section class="package" id="object-every-in-by-unreleased">
+
+#### [@stdlib/object/every-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/object/every-in-by)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - add `object/every-in-by`
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Neeraj Pathak
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - **feat:** add `object/every-in-by` _(by Neeraj Pathak)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
 
 </section>
 
