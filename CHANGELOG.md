@@ -4,49 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-19)
-
-<section class="packages">
-
-### Packages
-
-<section class="package" id="object-every-in-by-unreleased">
-
-#### [@stdlib/object/every-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/object/every-in-by)
-
-<details>
+## Unreleased (2025-06-23)
 
 <section class="features">
 
-##### Features
+### Features
 
 -   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - add `object/every-in-by`
 
 </section>
 
 <!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 1 person contributed to this release. Thank you to this contributor:
-
--   Neeraj Pathak
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -61,6 +29,18 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Neeraj Pathak
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
@@ -80,26 +60,6 @@ No changes reported for this release.
 
 ## 0.3.2 (2024-11-05)
 
-<section class="packages">
-
-### Packages
-
-</section>
-
-<!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 1 person contributed to this release. Thank you to this contributor:
-
--   Philipp Burckhardt
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -114,6 +74,18 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
@@ -153,26 +125,6 @@ No changes reported for this release.
 
 ## 0.2.0 (2024-02-05)
 
-<section class="packages">
-
-### Packages
-
-</section>
-
-<!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 1 person contributed to this release. Thank you to this contributor:
-
--   Philipp Burckhardt
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
@@ -188,6 +140,18 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
@@ -207,56 +171,13 @@ No changes reported for this release.
 
 ## 0.1.0 (2023-11-08)
 
-<section class="packages">
-
-### Packages
-
-<section class="package" id="object-v0.1.0">
-
-#### [@stdlib/object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/object)
-
-<details>
-
 <section class="features">
 
-##### Features
+### Features
 
 -   [`efe050d`](https://github.com/stdlib-js/stdlib/commit/efe050dbf3d17bd6929da255fa079c0324afc213) - update minimum TypeScript version
 -   [`377ae31`](https://github.com/stdlib-js/stdlib/commit/377ae317cf56720fbc00190c797211eb9453273a) - update namespace TypeScript declarations [(#1076)](https://github.com/stdlib-js/stdlib/pull/1076)
 -   [`15bdc15`](https://github.com/stdlib-js/stdlib/commit/15bdc15a2171c056311ff74f1334eda5985b6f55) - add assign to object namespace
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`efe050d`](https://github.com/stdlib-js/stdlib/commit/efe050dbf3d17bd6929da255fa079c0324afc213): update minimum TypeScript version to 4.1
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="object-assign-v0.1.0">
-
-#### [@stdlib/object/assign](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/object/assign)
-
-<details>
-
-<section class="features">
-
-##### Features
-
 -   [`7bb238d`](https://github.com/stdlib-js/stdlib/commit/7bb238dae5e38d59efd79d2c3ca678621dcb0ef2) - add `object/assign` with Object.assign() ponyfill
 
 </section>
@@ -265,57 +186,13 @@ No changes reported for this release.
 
 <section class="bug-fixes">
 
-##### Bug Fixes
+### Bug Fixes
 
 -   [`146f690`](https://github.com/stdlib-js/stdlib/commit/146f690f06602f93cc8a09eb6b0d5d15b5e56434) - apply changes from code review
 
 </section>
 
 <!-- /.bug-fixes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="object-ctor-v0.1.0">
-
-#### [@stdlib/object/ctor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/object/ctor)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`efe050d`](https://github.com/stdlib-js/stdlib/commit/efe050dbf3d17bd6929da255fa079c0324afc213) - update minimum TypeScript version
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`efe050d`](https://github.com/stdlib-js/stdlib/commit/efe050dbf3d17bd6929da255fa079c0324afc213): update minimum TypeScript version to 4.1
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
 
 <section class="breaking-changes">
 
@@ -328,19 +205,6 @@ No changes reported for this release.
 </section>
 
 <!-- /.breaking-changes -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 2 people contributed to this release. Thank you to the following contributors:
-
--   Athan Reines
--   Philipp Burckhardt
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -365,6 +229,19 @@ A total of 2 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
