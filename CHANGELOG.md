@@ -11,6 +11,7 @@
 ### Features
 
 -   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - add `object/some-in-by`
+-   [`9764a3e`](https://github.com/stdlib-js/stdlib/commit/9764a3e691011e9f2d957b51fc0b5766b1df9989) - add `object/every-own-by`
 -   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - add `object/every-in-by`
 
 </section>
@@ -24,6 +25,7 @@
 <details>
 
 -   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - **feat:** add `object/some-in-by` _(by Neeraj Pathak)_
+-   [`9764a3e`](https://github.com/stdlib-js/stdlib/commit/9764a3e691011e9f2d957b51fc0b5766b1df9989) - **feat:** add `object/every-own-by` _(by Neeraj Pathak)_
 -   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - **feat:** add `object/every-in-by` _(by Neeraj Pathak)_
 
 </details>
