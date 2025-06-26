@@ -11,6 +11,7 @@
 ### Features
 
 -   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - add `object/some-in-by`
+-   [`27331ac`](https://github.com/stdlib-js/stdlib/commit/27331acd07b701a431a5efd7ccf7104f9be8c5de) - add `object/none-in-by`
 -   [`9764a3e`](https://github.com/stdlib-js/stdlib/commit/9764a3e691011e9f2d957b51fc0b5766b1df9989) - add `object/every-own-by`
 -   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - add `object/every-in-by`
 
@@ -25,6 +26,9 @@
 <details>
 
 -   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - **feat:** add `object/some-in-by` _(by Neeraj Pathak)_
+-   [`f436338`](https://github.com/stdlib-js/stdlib/commit/f4363380546535eacc2ab3d924ef1d40cafd182b) - **chore:** fix README lint errors _(by Neeraj Pathak)_
+-   [`47f76c4`](https://github.com/stdlib-js/stdlib/commit/47f76c450e19eb90c7fa2c932b5be286951b0965) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`27331ac`](https://github.com/stdlib-js/stdlib/commit/27331acd07b701a431a5efd7ccf7104f9be8c5de) - **feat:** add `object/none-in-by` _(by Neeraj Pathak)_
 -   [`9764a3e`](https://github.com/stdlib-js/stdlib/commit/9764a3e691011e9f2d957b51fc0b5766b1df9989) - **feat:** add `object/every-own-by` _(by Neeraj Pathak)_
 -   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - **feat:** add `object/every-in-by` _(by Neeraj Pathak)_
 
