@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-23)
+## Unreleased (2025-06-26)
 
 <section class="features">
 
 ### Features
 
+-   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - add `object/some-in-by`
 -   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - add `object/every-in-by`
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - **feat:** add `object/some-in-by` _(by Neeraj Pathak)_
 -   [`3c99007`](https://github.com/stdlib-js/stdlib/commit/3c99007c615b7df61d85d7d88eca7a19ee4efde4) - **feat:** add `object/every-in-by` _(by Neeraj Pathak)_
 
 </details>
