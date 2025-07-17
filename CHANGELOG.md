@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-10)
+## Unreleased (2025-07-17)
 
 <section class="features">
 
@@ -25,6 +25,7 @@
 
 <details>
 
+-   [`5895660`](https://github.com/stdlib-js/stdlib/commit/58956601b004086e2df8b62bff01ab8b8cee0292) - **docs:** update related packages sections [(#7681)](https://github.com/stdlib-js/stdlib/pull/7681) _(by stdlib-bot)_
 -   [`3e03d59`](https://github.com/stdlib-js/stdlib/commit/3e03d59cc3253979b8d0901a7315e93502c9f23b) - **docs:** update related packages sections [(#7601)](https://github.com/stdlib-js/stdlib/pull/7601) _(by stdlib-bot)_
 -   [`c37217b`](https://github.com/stdlib-js/stdlib/commit/c37217bceb0830c5306e4d2cb02361a697242bb6) - **docs:** fix sections _(by Athan Reines)_
 -   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - **feat:** add `object/some-in-by` _(by Neeraj Pathak)_
