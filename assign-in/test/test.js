@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -23,28 +23,25 @@
 var tape = require( 'tape' );
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
-var assign = require( './../lib/builtin.js' );
+var assignIn = require( './../lib' );
 
 
 // VARIABLES //
 
 var opts = {
-	'skip': ( typeof Object.assign === 'undefined' ) // eslint-disable-line node/no-unsupported-features/es-builtins
-};
-var optsSymbol = {
-	'skip': opts.skip || !hasSymbolSupport()
+	'skip': !hasSymbolSupport()
 };
 
 
 // TESTS //
 
-tape( 'main export is a function', opts, function test( t ) {
+tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof assign, 'function', 'main export is a function' );
+	t.strictEqual( typeof assignIn, 'function', 'main export is a function' );
 	t.end();
 });
 
-tape( 'the function throws an error if provided `undefined` or `null` as a target object', opts, function test( t ) {
+tape( 'the function throws an error if provided `undefined` or `null` as a target object', function test( t ) {
 	var values;
 	var i;
 
@@ -60,25 +57,25 @@ tape( 'the function throws an error if provided `undefined` or `null` as a targe
 
 	function badValue( value ) {
 		return function badValue() {
-			assign( value, {} );
+			assignIn( value, {} );
 		};
 	}
 });
 
-tape( 'the function returns the target object', opts, function test( t ) {
+tape( 'the function returns the target object', function test( t ) {
 	var out;
 	var obj;
 
 	obj = {};
-	out = assign( obj, {
+	out = assignIn( obj, {
 		'a': 'b'
 	});
 
-	t.strictEqual( out, obj, 'returns target object' );
+	t.strictEqual( out, obj, 'returns expected value' );
 	t.end();
 });
 
-tape( 'the function assigns enumerable own properties of one or more source objects to a target object', opts, function test( t ) {
+tape( 'the function copies enumerable own properties of one or more source objects to a target object', function test( t ) {
 	var expected;
 	var obj1;
 	var obj2;
@@ -95,7 +92,7 @@ tape( 'the function assigns enumerable own properties of one or more source obje
 		'e': 'f'
 	};
 
-	out = assign( {}, obj1, obj2, obj3 );
+	out = assignIn( {}, obj1, obj2, obj3 );
 
 	expected = {
 		'a': 'b',
@@ -107,7 +104,7 @@ tape( 'the function assigns enumerable own properties of one or more source obje
 	t.end();
 });
 
-tape( 'the function copies symbol-typed properties', optsSymbol, function test( t ) {
+tape( 'the function copies own symbol properties', opts, function test( t ) {
 	var expected;
 	var obj1;
 	var obj2;
@@ -123,7 +120,7 @@ tape( 'the function copies symbol-typed properties', optsSymbol, function test( 
 		'a': 'b'
 	};
 
-	out = assign( {}, obj1, obj2 );
+	out = assignIn( {}, obj1, obj2 );
 	expected = {
 		'a': 'b'
 	};
@@ -134,7 +131,78 @@ tape( 'the function copies symbol-typed properties', optsSymbol, function test( 
 	t.end();
 });
 
-tape( 'the function wraps source primitives as objects before assignment', opts, function test( t ) {
+tape( 'the function copies enumerable own and inherited properties of one or more source objects to a target object', function test( t ) {
+	var expected;
+	var obj1;
+	var obj2;
+	var obj3;
+	var out;
+
+	function Foo() {
+		this.a = 1;
+		return this;
+	}
+
+	Foo.prototype.b = 2;
+
+	function Bar() {
+		this.c = 3;
+		return this;
+	}
+
+	Bar.prototype.d = 4;
+
+	obj1 = new Foo();
+	obj2 = new Bar();
+	obj3 = {
+		'c': 5 // overwrites Bar.c
+	};
+
+	out = assignIn( {}, obj1, obj2, obj3 );
+
+	expected = {
+		'a': 1,
+		'b': 2,
+		'c': 5,
+		'd': 4
+	};
+
+	t.deepEqual( out, expected, 'returns expected object' );
+	t.end();
+});
+
+tape( 'the function copies inherited symbol properties', opts, function test( t ) {
+	var expected;
+	var obj1;
+	var obj2;
+	var out;
+	var sym;
+
+	sym = Symbol( 'beep' );
+
+	function Foo() {
+		this.a = 'b';
+	}
+
+	Foo.prototype[ sym ] = 'boop';
+
+	obj1 = new Foo();
+	obj2 = {
+		'a': 'b'
+	};
+
+	out = assignIn( {}, obj1, obj2 );
+	expected = {
+		'a': 'b'
+	};
+	expected[ sym ] = 'boop';
+
+	t.strictEqual( out[ sym ], expected[ sym ], 'returns expected object' );
+	t.strictEqual( out.a, expected.a, 'returns expected object' );
+	t.end();
+});
+
+tape( 'the function supports primitive source values', function test( t ) {
 	var expected;
 	var obj1;
 	var obj2;
@@ -144,7 +212,7 @@ tape( 'the function wraps source primitives as objects before assignment', opts,
 		'a': 'b'
 	};
 	obj2 = 'c';
-	out = assign( {}, obj1, obj2 );
+	out = assignIn( {}, obj1, obj2 );
 	expected = {
 		'a': 'b',
 		'0': 'c'
@@ -152,7 +220,7 @@ tape( 'the function wraps source primitives as objects before assignment', opts,
 	t.deepEqual( out, expected, 'returns expected object' );
 
 	obj2 = 'abc';
-	out = assign( {}, obj1, obj2 );
+	out = assignIn( {}, obj1, obj2 );
 	expected = {
 		'a': 'b',
 		'0': 'a',

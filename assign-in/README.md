@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2023 The Stdlib Authors.
+Copyright (c) 2025 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# assign
+# assignIn
 
-> Copy enumerable own properties from one or more source objects to a target object.
+> Copy enumerable own and inherited properties from one or more source objects to a target object.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,25 +37,26 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var assign = require( '@stdlib/object/assign' );
+var assignIn = require( '@stdlib/object/assign-in' );
 ```
 
-#### assign( target, source1\[, source2\[,...,sourceN]] )
+#### assignIn( target, source1\[, source2\[,...,sourceN]] )
 
-Copies enumerable own properties from one or more source objects to a target object.
+Copies enumerable own and inherited properties from one or more source objects to a target object.
 
 ```javascript
-var x = {
-    'a': 'beep'
-};
-var y = {
-    'b': 'boop'
-};
+function Foo() {
+    this.a = 'beep';
+    return this;
+}
 
-var z = assign( x, y );
+Foo.prototype.b = 'boop';
 
-var v = z.b;
-// returns 'boop'
+var x = {};
+var y = new Foo();
+
+var z = assignIn( x, y );
+// returns { 'a': 'beep', 'b': 'boop' }
 
 var bool = ( z === x );
 // returns true
@@ -88,22 +89,27 @@ var bool = ( z === x );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var assign = require( '@stdlib/object/assign' );
+var assignIn = require( '@stdlib/object/assign-in' );
 
-var obj1 = {
-    'name': 'Jane',
-    'age': 29
-};
-var obj2 = {
-    'country': 'US',
-    'city': 'San Francisco'
-};
-var obj3 = {
-    'hobby': 'Reading'
-};
+function Foo() {
+    this.a = 1;
+    return this;
+}
 
-var result = assign( obj1, obj2, obj3 );
-// returns { 'name': 'Jane', 'age': 29, 'country': 'US', 'city': 'San Francisco', 'hobby': 'Reading' }
+Foo.prototype.b = 2;
+
+function Bar() {
+    this.c = 3;
+    return this;
+}
+
+Bar.prototype.d = 4;
+
+var obj1 = new Foo();
+var obj2 = new Bar();
+
+var result = assignIn( {}, obj1, obj2 );
+// returns { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
 ```
 
 </section>

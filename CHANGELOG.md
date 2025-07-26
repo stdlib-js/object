@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-17)
+## Unreleased (2025-07-26)
 
 <section class="features">
 
 ### Features
 
+-   [`a2d3800`](https://github.com/stdlib-js/stdlib/commit/a2d3800b4450759ff17f368e1c274e650eab15fe) - add `assignIn` to namespace
+-   [`9662b62`](https://github.com/stdlib-js/stdlib/commit/9662b629a7c5902e00307ac49311522873d4fef5) - add `object/assign-in`
 -   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - add `object/some-in-by`
 -   [`27331ac`](https://github.com/stdlib-js/stdlib/commit/27331acd07b701a431a5efd7ccf7104f9be8c5de) - add `object/none-in-by`
 -   [`9764a3e`](https://github.com/stdlib-js/stdlib/commit/9764a3e691011e9f2d957b51fc0b5766b1df9989) - add `object/every-own-by`
@@ -25,6 +27,10 @@
 
 <details>
 
+-   [`40d9627`](https://github.com/stdlib-js/stdlib/commit/40d9627aff300ce844813a564dd74dbf35a313f1) - **docs:** fix variable name _(by Athan Reines)_
+-   [`a2d3800`](https://github.com/stdlib-js/stdlib/commit/a2d3800b4450759ff17f368e1c274e650eab15fe) - **feat:** add `assignIn` to namespace _(by Athan Reines)_
+-   [`9662b62`](https://github.com/stdlib-js/stdlib/commit/9662b629a7c5902e00307ac49311522873d4fef5) - **feat:** add `object/assign-in` _(by Athan Reines)_
+-   [`a729aff`](https://github.com/stdlib-js/stdlib/commit/a729aff73d715beca8abf52dac480cee4de8dd2c) - **chore:** clean-up and update documentation _(by Athan Reines)_
 -   [`5895660`](https://github.com/stdlib-js/stdlib/commit/58956601b004086e2df8b62bff01ab8b8cee0292) - **docs:** update related packages sections [(#7681)](https://github.com/stdlib-js/stdlib/pull/7681) _(by stdlib-bot)_
 -   [`3e03d59`](https://github.com/stdlib-js/stdlib/commit/3e03d59cc3253979b8d0901a7315e93502c9f23b) - **docs:** update related packages sections [(#7601)](https://github.com/stdlib-js/stdlib/pull/7601) _(by stdlib-bot)_
 -   [`c37217b`](https://github.com/stdlib-js/stdlib/commit/c37217bceb0830c5306e4d2cb02361a697242bb6) - **docs:** fix sections _(by Athan Reines)_

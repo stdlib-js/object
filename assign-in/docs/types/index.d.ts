@@ -1,7 +1,7 @@
 /*
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 // TypeScript Version: 4.1
 
 /**
-* Copies own enumerable properties from one or more source objects to a target object.
+* Copies own enumerable and inherited properties from one or more source objects to a target object.
 *
 * ## Notes
 *
@@ -33,20 +33,27 @@
 * @returns target object
 *
 * @example
-* var obj1 = {
-*     'a': 'beep'
-* };
-* var obj2 = {
-*     'b': 'boop'
-* };
+* function Foo() {
+*     this.a = 1;
+*     return this;
+* }
 *
-* var out = assign( obj1, obj2 );
-* // returns { 'a': 'beep', 'b': 'boop' }
+* Foo.prototype.b = 2;
+*
+* function Bar() {
+*     this.c = 3;
+*     return this;
+* }
+*
+* Bar.prototype.d = 4;
+*
+* var out = assignIn( {}, new Foo(), new Bar() );
+* // returns { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
 */
-declare function assign<T extends object, U>( target: T, source: U ): T & U;
+declare function assignIn<T extends object, U>( target: T, source: U ): T & U;
 
 /**
-* Copies own enumerable properties from one or more source objects to a target object.
+* Copies own and inherited enumerable properties from one or more source objects to a target object.
 *
 * ## Notes
 *
@@ -59,11 +66,33 @@ declare function assign<T extends object, U>( target: T, source: U ): T & U;
 * @param source2 - second source object
 * @throws first argument must not be null or undefined
 * @returns target object
+*
+* @example
+* function Foo() {
+*     this.a = 1;
+*     return this;
+* }
+*
+* Foo.prototype.b = 2;
+*
+* function Bar() {
+*     this.c = 3;
+*     return this;
+* }
+*
+* Bar.prototype.d = 4;
+*
+* var beep = {
+*     'e': 5
+* };
+*
+* var out = assignIn( {}, new Foo(), new Bar(), beep );
+* // returns { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 }
 */
-declare function assign<T extends object, U, V>( target: T, source1: U, source2: V ): T & U & V;
+declare function assignIn<T extends object, U, V>( target: T, source1: U, source2: V ): T & U & V;
 
 /**
-* Copies own enumerable properties from one or more source objects to a target object.
+* Copies own and inherited enumerable properties from one or more source objects to a target object.
 *
 * ## Notes
 *
@@ -77,11 +106,37 @@ declare function assign<T extends object, U, V>( target: T, source1: U, source2:
 * @param source3 - third source object
 * @throws first argument must not be null or undefined
 * @returns target object
+*
+* @example
+* function Foo() {
+*     this.a = 1;
+*     return this;
+* }
+*
+* Foo.prototype.b = 2;
+*
+* function Bar() {
+*     this.c = 3;
+*     return this;
+* }
+*
+* Bar.prototype.d = 4;
+*
+* var beep = {
+*     'e': 5
+* };
+*
+* var boop = {
+*     'f': 6
+* };
+*
+* var out = assignIn( {}, new Foo(), new Bar(), beep, boop );
+* // returns { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6 }
 */
-declare function assign<T extends object, U, V, W>( target: T, source1: U, source2: V, source3: W ): T & U & V & W;
+declare function assignIn<T extends object, U, V, W>( target: T, source1: U, source2: V, source3: W ): T & U & V & W;
 
 /**
-* Copies own enumerable properties from one or more source objects to a target object.
+* Copies own and inherited enumerable properties from one or more source objects to a target object.
 *
 * ## Notes
 *
@@ -95,19 +150,26 @@ declare function assign<T extends object, U, V, W>( target: T, source1: U, sourc
 * @returns target object
 *
 * @example
-* var obj1 = {
-*     'a': 'beep'
-* };
-* var obj2 = {
-*     'b': 'boop'
-* };
+* function Foo() {
+*     this.a = 1;
+*     return this;
+* }
 *
-* var out = assign( obj1, obj2 );
-* // returns { 'a': 'beep', 'b': 'boop' }
+* Foo.prototype.b = 2;
+*
+* function Bar() {
+*     this.c = 3;
+*     return this;
+* }
+*
+* Bar.prototype.d = 4;
+*
+* var out = assignIn( {}, new Foo(), new Bar() );
+* // returns { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
 */
-declare function assign( target: object, ...source: Array<any> ): object;
+declare function assignIn( target: object, ...source: Array<any> ): object;
 
 
 // EXPORTS //
 
-export = assign;
+export = assignIn;

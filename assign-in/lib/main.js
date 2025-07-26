@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2023 The Stdlib Authors.
+* Copyright (c) 2025 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var enumerableProperties = require( '@stdlib/utils/enumerable-properties' );
+var enumerablePropertiesIn = require( '@stdlib/utils/enumerable-properties-in' );
 var Object = require( './../../ctor' );
 var format = require( '@stdlib/string/format' );
 
@@ -28,7 +28,7 @@ var format = require( '@stdlib/string/format' );
 // MAIN //
 
 /**
-* Copies own enumerable properties from source objects to a target object.
+* Copies own and inherited enumerable properties from source objects to a target object.
 *
 * ## Notes
 *
@@ -42,17 +42,24 @@ var format = require( '@stdlib/string/format' );
 * @returns {Object} target object
 *
 * @example
-* var obj1 = {
-*     'a': 'beep'
-* };
-* var obj2 = {
-*     'b': 'boop'
-* };
+* function Foo() {
+*     this.a = 1;
+*     return this;
+* }
 *
-* var out = assign( obj1, obj2 );
-* // returns { 'a': 'beep', 'b': 'boop' }
+* Foo.prototype.b = 2;
+*
+* function Bar() {
+*     this.c = 3;
+*     return this;
+* }
+*
+* Bar.prototype.d = 4;
+*
+* var out = assignIn( {}, new Foo(), new Bar() );
+* // returns { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
 */
-function assign( target ) {
+function assignIn( target ) {
 	var source;
 	var keys;
 	var key;
@@ -69,8 +76,7 @@ function assign( target ) {
 		if ( source === void 0 || source === null ) {
 			continue;
 		}
-
-		keys = enumerableProperties( Object( source ) );
+		keys = enumerablePropertiesIn( Object( source ) );
 		len = keys.length;
 		for ( j = 0; j < len; j++ ) {
 			key = keys[ j ];
@@ -83,4 +89,4 @@ function assign( target ) {
 
 // EXPORTS //
 
-module.exports = assign;
+module.exports = assignIn;
