@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-04)
+## Unreleased (2025-09-01)
 
 <section class="features">
 
 ### Features
 
+-   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - add missing exports to namespaces
 -   [`a2d3800`](https://github.com/stdlib-js/stdlib/commit/a2d3800b4450759ff17f368e1c274e650eab15fe) - add `assignIn` to namespace
 -   [`9662b62`](https://github.com/stdlib-js/stdlib/commit/9662b629a7c5902e00307ac49311522873d4fef5) - add `object/assign-in`
 -   [`5c5dd63`](https://github.com/stdlib-js/stdlib/commit/5c5dd632d992ce0486d5df295af417435d37579b) - add `object/some-in-by`
@@ -27,6 +28,9 @@
 
 <details>
 
+-   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - **feat:** add missing exports to namespaces _(by Philipp Burckhardt)_
+-   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`f344466`](https://github.com/stdlib-js/stdlib/commit/f344466c6dcfb8f52d7f3148acaadd52772938da) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`40d9627`](https://github.com/stdlib-js/stdlib/commit/40d9627aff300ce844813a564dd74dbf35a313f1) - **docs:** fix variable name _(by Athan Reines)_
 -   [`a2d3800`](https://github.com/stdlib-js/stdlib/commit/a2d3800b4450759ff17f368e1c274e650eab15fe) - **feat:** add `assignIn` to namespace _(by Athan Reines)_
 -   [`9662b62`](https://github.com/stdlib-js/stdlib/commit/9662b629a7c5902e00307ac49311522873d4fef5) - **feat:** add `object/assign-in` _(by Athan Reines)_
@@ -51,10 +55,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Neeraj Pathak
+-   Philipp Burckhardt
 
 </section>
 
