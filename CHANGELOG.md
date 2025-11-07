@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-01)
+## Unreleased (2025-11-07)
 
 <section class="features">
 
 ### Features
 
+-   [`0c6de9f`](https://github.com/stdlib-js/stdlib/commit/0c6de9f46e489bf4d7a9f3899dbe963348fc7480) - update `object` TypeScript declarations
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - add missing exports to namespaces
 -   [`a2d3800`](https://github.com/stdlib-js/stdlib/commit/a2d3800b4450759ff17f368e1c274e650eab15fe) - add `assignIn` to namespace
 -   [`9662b62`](https://github.com/stdlib-js/stdlib/commit/9662b629a7c5902e00307ac49311522873d4fef5) - add `object/assign-in`
@@ -28,6 +29,8 @@
 
 <details>
 
+-   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
+-   [`0c6de9f`](https://github.com/stdlib-js/stdlib/commit/0c6de9f46e489bf4d7a9f3899dbe963348fc7480) - **feat:** update `object` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - **feat:** add missing exports to namespaces _(by Philipp Burckhardt)_
 -   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`f344466`](https://github.com/stdlib-js/stdlib/commit/f344466c6dcfb8f52d7f3148acaadd52772938da) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
