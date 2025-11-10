@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-07)
+## Unreleased (2025-11-10)
 
 <section class="features">
 
@@ -29,6 +29,7 @@
 
 <details>
 
+-   [`7849e6f`](https://github.com/stdlib-js/stdlib/commit/7849e6ffba5b1734a5314c5ded28602dd75e0f3c) - **style:** remove semicolons after function declarations _(by Philipp Burckhardt)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`0c6de9f`](https://github.com/stdlib-js/stdlib/commit/0c6de9f46e489bf4d7a9f3899dbe963348fc7480) - **feat:** update `object` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - **feat:** add missing exports to namespaces _(by Philipp Burckhardt)_
