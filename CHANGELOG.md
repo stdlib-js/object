@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-10)
+## Unreleased (2025-11-29)
 
 <section class="features">
 
 ### Features
 
+-   [`4ebdf6c`](https://github.com/stdlib-js/stdlib/commit/4ebdf6c5b911d2bfde819ab56e654a22b9f85133) - add `object/any-in-by`
 -   [`0c6de9f`](https://github.com/stdlib-js/stdlib/commit/0c6de9f46e489bf4d7a9f3899dbe963348fc7480) - update `object` TypeScript declarations
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - add missing exports to namespaces
 -   [`a2d3800`](https://github.com/stdlib-js/stdlib/commit/a2d3800b4450759ff17f368e1c274e650eab15fe) - add `assignIn` to namespace
@@ -29,6 +30,9 @@
 
 <details>
 
+-   [`f03b259`](https://github.com/stdlib-js/stdlib/commit/f03b259e592ffe69c5c59f9f2d2a4a2cba508244) - **docs:** fix missing sections _(by Athan Reines)_
+-   [`6ea3fff`](https://github.com/stdlib-js/stdlib/commit/6ea3fff1850167852dc0ea18003c1e0209d70335) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`4ebdf6c`](https://github.com/stdlib-js/stdlib/commit/4ebdf6c5b911d2bfde819ab56e654a22b9f85133) - **feat:** add `object/any-in-by` _(by Neeraj Pathak)_
 -   [`7849e6f`](https://github.com/stdlib-js/stdlib/commit/7849e6ffba5b1734a5314c5ded28602dd75e0f3c) - **style:** remove semicolons after function declarations _(by Philipp Burckhardt)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`0c6de9f`](https://github.com/stdlib-js/stdlib/commit/0c6de9f46e489bf4d7a9f3899dbe963348fc7480) - **feat:** update `object` TypeScript declarations _(by Philipp Burckhardt)_
