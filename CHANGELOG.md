@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-29)
+## Unreleased (2025-12-01)
 
 <section class="features">
 
 ### Features
 
+-   [`a76b14f`](https://github.com/stdlib-js/stdlib/commit/a76b14fdbd221aa79c7d845b006cd39bcc37654e) - add `object/any-own-by`
 -   [`4ebdf6c`](https://github.com/stdlib-js/stdlib/commit/4ebdf6c5b911d2bfde819ab56e654a22b9f85133) - add `object/any-in-by`
 -   [`0c6de9f`](https://github.com/stdlib-js/stdlib/commit/0c6de9f46e489bf4d7a9f3899dbe963348fc7480) - update `object` TypeScript declarations
 -   [`ccb87b6`](https://github.com/stdlib-js/stdlib/commit/ccb87b67fc9b58a37d5603ee1b86658bc70f0ef3) - add missing exports to namespaces
@@ -30,6 +31,8 @@
 
 <details>
 
+-   [`0b449a3`](https://github.com/stdlib-js/stdlib/commit/0b449a38d1f623ac56b4cec10626cd022c299c87) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`a76b14f`](https://github.com/stdlib-js/stdlib/commit/a76b14fdbd221aa79c7d845b006cd39bcc37654e) - **feat:** add `object/any-own-by` _(by Neeraj Pathak)_
 -   [`f03b259`](https://github.com/stdlib-js/stdlib/commit/f03b259e592ffe69c5c59f9f2d2a4a2cba508244) - **docs:** fix missing sections _(by Athan Reines)_
 -   [`6ea3fff`](https://github.com/stdlib-js/stdlib/commit/6ea3fff1850167852dc0ea18003c1e0209d70335) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`4ebdf6c`](https://github.com/stdlib-js/stdlib/commit/4ebdf6c5b911d2bfde819ab56e654a22b9f85133) - **feat:** add `object/any-in-by` _(by Neeraj Pathak)_
