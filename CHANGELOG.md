@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`82b3ef7`](https://github.com/stdlib-js/stdlib/commit/82b3ef70656a8fe1a765fc6875b2d440904c1d79) - add `object/none-own-by`
 -   [`a76b14f`](https://github.com/stdlib-js/stdlib/commit/a76b14fdbd221aa79c7d845b006cd39bcc37654e) - add `object/any-own-by`
 -   [`4ebdf6c`](https://github.com/stdlib-js/stdlib/commit/4ebdf6c5b911d2bfde819ab56e654a22b9f85133) - add `object/any-in-by`
 -   [`0c6de9f`](https://github.com/stdlib-js/stdlib/commit/0c6de9f46e489bf4d7a9f3899dbe963348fc7480) - update `object` TypeScript declarations
@@ -31,6 +32,8 @@
 
 <details>
 
+-   [`38c3e12`](https://github.com/stdlib-js/stdlib/commit/38c3e1201b3d051c577cc97f7b3cc87999ec052a) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`82b3ef7`](https://github.com/stdlib-js/stdlib/commit/82b3ef70656a8fe1a765fc6875b2d440904c1d79) - **feat:** add `object/none-own-by` _(by Neeraj Pathak)_
 -   [`0b449a3`](https://github.com/stdlib-js/stdlib/commit/0b449a38d1f623ac56b4cec10626cd022c299c87) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`a76b14f`](https://github.com/stdlib-js/stdlib/commit/a76b14fdbd221aa79c7d845b006cd39bcc37654e) - **feat:** add `object/any-own-by` _(by Neeraj Pathak)_
 -   [`f03b259`](https://github.com/stdlib-js/stdlib/commit/f03b259e592ffe69c5c59f9f2d2a4a2cba508244) - **docs:** fix missing sections _(by Athan Reines)_
