@@ -56,7 +56,7 @@ function noneOwnBy( obj, predicate, thisArg ) {
 	var key;
 
 	if ( !isObject( obj ) ) {
-		throw new TypeError( format(' invalid argument. First argument must be an object. Value: `%s`.', obj ) );
+		throw new TypeError( format( 'invalid argument. First argument must be an object. Value: `%s`.', obj ) );
 	}
 	if ( !isFunction( predicate ) ) {
 		throw new TypeError( format( 'invalid argument. Second argument must be a function. Value: `%s`.', predicate ) );

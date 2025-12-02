@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-01)
+## Unreleased (2025-12-02)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`d3c2ccc`](https://github.com/stdlib-js/stdlib/commit/d3c2ccca187782867ce02171a4d0da106728a731) - **docs:** resolve typos and documentation inconsistencies _(by Philipp Burckhardt)_
 -   [`38c3e12`](https://github.com/stdlib-js/stdlib/commit/38c3e1201b3d051c577cc97f7b3cc87999ec052a) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`82b3ef7`](https://github.com/stdlib-js/stdlib/commit/82b3ef70656a8fe1a765fc6875b2d440904c1d79) - **feat:** add `object/none-own-by` _(by Neeraj Pathak)_
 -   [`0b449a3`](https://github.com/stdlib-js/stdlib/commit/0b449a38d1f623ac56b4cec10626cd022c299c87) - **refactor:** update paths _(by Neeraj Pathak)_
