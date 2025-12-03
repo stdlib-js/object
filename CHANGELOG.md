@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-02)
+## Unreleased (2025-12-03)
 
 <section class="features">
 
 ### Features
 
+-   [`3abebe5`](https://github.com/stdlib-js/stdlib/commit/3abebe5b4765d38f8ba96115e3d54230ec820e50) - add `object/some-own-by`
 -   [`82b3ef7`](https://github.com/stdlib-js/stdlib/commit/82b3ef70656a8fe1a765fc6875b2d440904c1d79) - add `object/none-own-by`
 -   [`a76b14f`](https://github.com/stdlib-js/stdlib/commit/a76b14fdbd221aa79c7d845b006cd39bcc37654e) - add `object/any-own-by`
 -   [`4ebdf6c`](https://github.com/stdlib-js/stdlib/commit/4ebdf6c5b911d2bfde819ab56e654a22b9f85133) - add `object/any-in-by`
@@ -32,6 +33,8 @@
 
 <details>
 
+-   [`95cda4d`](https://github.com/stdlib-js/stdlib/commit/95cda4dab242ed1c82ade34f0016dde344b88c88) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`3abebe5`](https://github.com/stdlib-js/stdlib/commit/3abebe5b4765d38f8ba96115e3d54230ec820e50) - **feat:** add `object/some-own-by` _(by Neeraj Pathak)_
 -   [`d3c2ccc`](https://github.com/stdlib-js/stdlib/commit/d3c2ccca187782867ce02171a4d0da106728a731) - **docs:** resolve typos and documentation inconsistencies _(by Philipp Burckhardt)_
 -   [`38c3e12`](https://github.com/stdlib-js/stdlib/commit/38c3e1201b3d051c577cc97f7b3cc87999ec052a) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`82b3ef7`](https://github.com/stdlib-js/stdlib/commit/82b3ef70656a8fe1a765fc6875b2d440904c1d79) - **feat:** add `object/none-own-by` _(by Neeraj Pathak)_

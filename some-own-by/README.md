@@ -18,9 +18,11 @@ limitations under the License.
 
 -->
 
-# someInBy
+# someOwnBy
 
-> Test whether an object contains at least `n` properties which pass a test implemented by a predicate function.
+> Test whether an object contains at least `n` own properties which pass a test implemented by a predicate function.
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
 <section class="intro">
 
@@ -28,17 +30,19 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<!-- Package usage documentation. -->
+
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var someInBy = require( '@stdlib/object/some-in-by' );
+var someOwnBy = require( '@stdlib/object/some-own-by' );
 ```
 
-#### someInBy( obj, n, predicate\[, thisArg ] )
+#### someOwnBy( obj, n, predicate\[, thisArg ] )
 
-Tests whether an `obj` contains at least `n` properties which pass a test implemented by a `predicate` function.
+Tests whether an `object` contains at least `n` own properties which pass a test implemented by a `predicate` function.
 
 ```javascript
 function isNegative( value ) {
@@ -52,7 +56,7 @@ var obj = {
     'd': -1
 };
 
-var bool = someInBy( obj, 2, isNegative );
+var bool = someOwnBy( obj, 2, isNegative );
 // returns true
 ```
 
@@ -73,7 +77,7 @@ var obj = {
     'd': 4
 };
 
-var bool = someInBy( obj, 2, isPositive );
+var bool = someOwnBy( obj, 2, isPositive );
 // returns true
 ```
 
@@ -104,7 +108,7 @@ var context = {
     'count': 0
 };
 
-var bool = someInBy( obj, 1, sum, context );
+var bool = someOwnBy( obj, 1, sum, context );
 // returns true
 
 var mean = context.sum / context.count;
@@ -115,21 +119,27 @@ var mean = context.sum / context.count;
 
 <!-- /.usage -->
 
+<!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 <section class="notes">
 
 ## Notes
 
--   If provided an empty `obj`, the function returns `false`.
+-   An [`Object`][mdn-object] refers to a JavaScript object, which is a collection of properties. Each property is an association between a key (or name) and a value. The key can be a string or a symbol, and the value can be any JavaScript value, including functions and other objects
+
+-   If provided an empty `object`, the function returns `false`.
 
     ```javascript
     function alwaysTrue() {
         return true;
     }
-    var bool = someInBy( {}, 1, alwaysTrue );
+    var bool = someOwnBy( {}, 1, alwaysTrue );
     // returns false
     ```
 
--   The function does **not** skip `undefined` properties.
+-   The function does **not** skip `undefined` elements.
+
+    <!-- eslint-disable no-sparse-arrays, stdlib/doctest-marker -->
 
     ```javascript
     function log( value, key ) {
@@ -145,28 +155,33 @@ var mean = context.sum / context.count;
         'e': -1
     };
 
-    var bool = someInBy( obj, 1, log );
-    // logs
-    // a: 1
-    // b: void 0
-    // c: void 0
-    // d: 4
-    // e: -1
+    var bool = someOwnBy( obj, 1, log );
+    /* =>
+        a: 1
+        b: void 0
+        c: void 0
+        d: 4
+        e: -1
+    */
     ```
 
--   The function provides limited support for dynamic objects (i.e., objects whose properties change during execution).
+-   The function provides limited support for dynamic objects (i.e., objects whose `length` changes during execution).
 
 </section>
 
 <!-- /.notes -->
 
+<!-- Package usage examples. -->
+
 <section class="examples">
 
 ## Examples
 
+<!-- eslint no-undef: "error" -->
+
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var someInBy = require( '@stdlib/object/some-in-by' );
+var someOwnBy = require( '@stdlib/object/some-own-by' );
 
 function threshold( value ) {
     return ( value > 0.95 );
@@ -177,16 +192,18 @@ var obj = {};
 var i;
 
 for ( i = 0; i < 100; i++ ) {
-    obj[ 'key' + i ] = randu();
+    obj[ 'key'+i ] = randu();
 }
 
-bool = someInBy( obj, 5, threshold );
+bool = someOwnBy( obj, 5, threshold );
 // returns <boolean>
 ```
 
 </section>
 
 <!-- /.examples -->
+
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="references">
 
@@ -202,10 +219,10 @@ bool = someInBy( obj, 5, threshold );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/object/any-in-by`][@stdlib/object/any-in-by]</span><span class="delimiter">: </span><span class="description">test whether at least one property in an object passes a test implemented by a predicate function.</span>
--   <span class="package-name">[`@stdlib/object/every-in-by`][@stdlib/object/every-in-by]</span><span class="delimiter">: </span><span class="description">test whether all properties (own and inherited) of an object pass a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object/any-own-by`][@stdlib/object/any-own-by]</span><span class="delimiter">: </span><span class="description">test whether whether any 'own' property of a provided object satisfies a predicate function.</span>
+-   <span class="package-name">[`@stdlib/object/every-own-by`][@stdlib/object/every-own-by]</span><span class="delimiter">: </span><span class="description">test whether all own properties of an object pass a test implemented by a predicate function.</span>
 -   <span class="package-name">[`@stdlib/utils/some-by`][@stdlib/utils/some-by]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function.</span>
--   <span class="package-name">[`@stdlib/object/some-own-by`][@stdlib/object/some-own-by]</span><span class="delimiter">: </span><span class="description">test whether some `own` properties of a provided object satisfy a predicate function for at least `n` properties.</span>
+-   <span class="package-name">[`@stdlib/object/some-in-by`][@stdlib/object/some-in-by]</span><span class="delimiter">: </span><span class="description">test whether an object contains at least n properties (own and inherited) which pass a test implemented by a predicate function.</span>
 
 </section>
 
@@ -215,15 +232,17 @@ bool = someInBy( obj, 5, threshold );
 
 <section class="links">
 
+[mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
 <!-- <related-links> -->
 
-[@stdlib/object/any-in-by]: https://github.com/stdlib-js/object/tree/main/any-in-by
+[@stdlib/object/any-own-by]: https://github.com/stdlib-js/object/tree/main/any-own-by
 
-[@stdlib/object/every-in-by]: https://github.com/stdlib-js/object/tree/main/every-in-by
+[@stdlib/object/every-own-by]: https://github.com/stdlib-js/object/tree/main/every-own-by
 
 [@stdlib/utils/some-by]: https://github.com/stdlib-js/utils-some-by
 
-[@stdlib/object/some-own-by]: https://github.com/stdlib-js/object/tree/main/some-own-by
+[@stdlib/object/some-in-by]: https://github.com/stdlib-js/object/tree/main/some-in-by
 
 <!-- </related-links> -->
 
