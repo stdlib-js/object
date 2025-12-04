@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-03)
+## Unreleased (2025-12-04)
 
 <section class="features">
 
@@ -27,12 +27,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`0371c46`](https://github.com/stdlib-js/stdlib/commit/0371c4601c1767f36cffd00a77b6caf96de9478c) - add missing `thisArg` parameter
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`0371c46`](https://github.com/stdlib-js/stdlib/commit/0371c4601c1767f36cffd00a77b6caf96de9478c) - **fix:** add missing `thisArg` parameter _(by Philipp Burckhardt)_
 -   [`95cda4d`](https://github.com/stdlib-js/stdlib/commit/95cda4dab242ed1c82ade34f0016dde344b88c88) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`3abebe5`](https://github.com/stdlib-js/stdlib/commit/3abebe5b4765d38f8ba96115e3d54230ec820e50) - **feat:** add `object/some-own-by` _(by Neeraj Pathak)_
 -   [`d3c2ccc`](https://github.com/stdlib-js/stdlib/commit/d3c2ccca187782867ce02171a4d0da106728a731) - **docs:** resolve typos and documentation inconsistencies _(by Philipp Burckhardt)_
