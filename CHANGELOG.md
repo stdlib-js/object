@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-04)
+## Unreleased (2025-12-06)
 
 <section class="features">
 
@@ -43,6 +43,7 @@
 
 <details>
 
+-   [`ed42a4f`](https://github.com/stdlib-js/stdlib/commit/ed42a4f20e80757e6e855dc9ac4e70ab5a28f423) - **docs:** update related packages sections [(#8835)](https://github.com/stdlib-js/stdlib/pull/8835) _(by stdlib-bot)_
 -   [`0371c46`](https://github.com/stdlib-js/stdlib/commit/0371c4601c1767f36cffd00a77b6caf96de9478c) - **fix:** add missing `thisArg` parameter _(by Philipp Burckhardt)_
 -   [`95cda4d`](https://github.com/stdlib-js/stdlib/commit/95cda4dab242ed1c82ade34f0016dde344b88c88) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`3abebe5`](https://github.com/stdlib-js/stdlib/commit/3abebe5b4765d38f8ba96115e3d54230ec820e50) - **feat:** add `object/some-own-by` _(by Neeraj Pathak)_
