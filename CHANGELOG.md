@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`64086a3`](https://github.com/stdlib-js/stdlib/commit/64086a38e61cf8b53907eaefc5ed290e27351122) - add `object/capitalize-keys`
 -   [`6f538a3`](https://github.com/stdlib-js/stdlib/commit/6f538a3260c693752b6c1bb4aa3406bd8c542462) - add `object/move-property`
 -   [`3abebe5`](https://github.com/stdlib-js/stdlib/commit/3abebe5b4765d38f8ba96115e3d54230ec820e50) - add `object/some-own-by`
 -   [`82b3ef7`](https://github.com/stdlib-js/stdlib/commit/82b3ef70656a8fe1a765fc6875b2d440904c1d79) - add `object/none-own-by`
@@ -44,6 +45,7 @@
 
 <details>
 
+-   [`64086a3`](https://github.com/stdlib-js/stdlib/commit/64086a38e61cf8b53907eaefc5ed290e27351122) - **feat:** add `object/capitalize-keys` _(by Neeraj Pathak)_
 -   [`7d41665`](https://github.com/stdlib-js/stdlib/commit/7d41665991a7dc4fdef731c971bd844458f4350a) - **docs:** update related packages sections [(#9035)](https://github.com/stdlib-js/stdlib/pull/9035) _(by stdlib-bot)_
 -   [`6f538a3`](https://github.com/stdlib-js/stdlib/commit/6f538a3260c693752b6c1bb4aa3406bd8c542462) - **feat:** add `object/move-property` _(by Neeraj Pathak)_
 -   [`ed42a4f`](https://github.com/stdlib-js/stdlib/commit/ed42a4f20e80757e6e855dc9ac4e70ab5a28f423) - **docs:** update related packages sections [(#8835)](https://github.com/stdlib-js/stdlib/pull/8835) _(by stdlib-bot)_
