@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-07)
+## Unreleased (2025-12-15)
 
 <section class="features">
 
@@ -44,6 +44,7 @@
 
 <details>
 
+-   [`7d41665`](https://github.com/stdlib-js/stdlib/commit/7d41665991a7dc4fdef731c971bd844458f4350a) - **docs:** update related packages sections [(#9035)](https://github.com/stdlib-js/stdlib/pull/9035) _(by stdlib-bot)_
 -   [`6f538a3`](https://github.com/stdlib-js/stdlib/commit/6f538a3260c693752b6c1bb4aa3406bd8c542462) - **feat:** add `object/move-property` _(by Neeraj Pathak)_
 -   [`ed42a4f`](https://github.com/stdlib-js/stdlib/commit/ed42a4f20e80757e6e855dc9ac4e70ab5a28f423) - **docs:** update related packages sections [(#8835)](https://github.com/stdlib-js/stdlib/pull/8835) _(by stdlib-bot)_
 -   [`0371c46`](https://github.com/stdlib-js/stdlib/commit/0371c4601c1767f36cffd00a77b6caf96de9478c) - **fix:** add missing `thisArg` parameter _(by Philipp Burckhardt)_
