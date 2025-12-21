@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2025-12-21)
 
 <section class="features">
 
 ### Features
 
+-   [`090d2fd`](https://github.com/stdlib-js/stdlib/commit/090d2fd4b7c4652f818c3c39f889f6ac34729afa) - add `object/uncapitalize-keys`
 -   [`64086a3`](https://github.com/stdlib-js/stdlib/commit/64086a38e61cf8b53907eaefc5ed290e27351122) - add `object/capitalize-keys`
 -   [`6f538a3`](https://github.com/stdlib-js/stdlib/commit/6f538a3260c693752b6c1bb4aa3406bd8c542462) - add `object/move-property`
 -   [`3abebe5`](https://github.com/stdlib-js/stdlib/commit/3abebe5b4765d38f8ba96115e3d54230ec820e50) - add `object/some-own-by`
@@ -45,6 +46,8 @@
 
 <details>
 
+-   [`b7e501d`](https://github.com/stdlib-js/stdlib/commit/b7e501da67a62621cecdf8ca98125c99667a06d5) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`090d2fd`](https://github.com/stdlib-js/stdlib/commit/090d2fd4b7c4652f818c3c39f889f6ac34729afa) - **feat:** add `object/uncapitalize-keys` _(by Neeraj Pathak)_
 -   [`64086a3`](https://github.com/stdlib-js/stdlib/commit/64086a38e61cf8b53907eaefc5ed290e27351122) - **feat:** add `object/capitalize-keys` _(by Neeraj Pathak)_
 -   [`7d41665`](https://github.com/stdlib-js/stdlib/commit/7d41665991a7dc4fdef731c971bd844458f4350a) - **docs:** update related packages sections [(#9035)](https://github.com/stdlib-js/stdlib/pull/9035) _(by stdlib-bot)_
 -   [`6f538a3`](https://github.com/stdlib-js/stdlib/commit/6f538a3260c693752b6c1bb4aa3406bd8c542462) - **feat:** add `object/move-property` _(by Neeraj Pathak)_

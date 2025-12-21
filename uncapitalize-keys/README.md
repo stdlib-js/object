@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# capitalizeKeys
+# uncapitalizeKeys
 
-> Convert the first letter of each object key to uppercase.
+> Convert the first letter of each object key to lowercase.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,21 +37,21 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var capitalizeKeys = require( '@stdlib/object/capitalize-keys' );
+var uncapitalizeKeys = require( '@stdlib/object/uncapitalize-keys' );
 ```
 
-#### capitalizeKeys( obj )
+#### uncapitalizeKeys( obj )
 
-Converts the first letter of each `object` key to uppercase, mapping the transformed keys to a new `object` having the same values.
+Converts the first letter of each `object` key to lowercase, mapping the transformed keys to a new `object` having the same values.
 
 ```javascript
 var obj1 = {
-    'beepBoop': 1,
-    'fooBar': 2
+    'BeepBoop': 1,
+    'FooBar': 2
 };
 
-var obj2 = capitalizeKeys( obj1 );
-// returns { 'BeepBoop': 1, 'FooBar': 2 }
+var obj2 = uncapitalizeKeys( obj1 );
+// returns { 'beepBoop': 1, 'fooBar': 2 }
 ```
 
 </section>
@@ -80,19 +80,19 @@ var obj2 = capitalizeKeys( obj1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var capitalizeKeys = require( '@stdlib/object/capitalize-keys' );
+var uncapitalizeKeys = require( '@stdlib/object/uncapitalize-keys' );
 
 var obj1 = {
-    'aa': 'beep',
-    'bb': 'boop',
-    'cc': 'foo',
-    'dd': 'bar'
+    'AA': 'beep',
+    'BB': 'boop',
+    'CC': 'foo',
+    'DD': 'bar'
 };
 
-var obj2 = capitalizeKeys( obj1 );
+var obj2 = uncapitalizeKeys( obj1 );
 
 console.dir( obj2 );
-// => { 'Aa': 'beep', 'Bb': 'boop', 'Cc': 'foo', 'Dd': 'bar' }
+// => { 'aA': 'beep', 'bB': 'boop', 'cC': 'foo', 'dD': 'bar' }
 ```
 
 </section>
@@ -115,8 +115,8 @@ console.dir( obj2 );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/object/uncapitalize-keys`][@stdlib/object/uncapitalize-keys]</span><span class="delimiter">: </span><span class="description">convert the first letter of each object key to lowercase.</span>
--   <span class="package-name">[`@stdlib/utils/uppercase-keys`][@stdlib/utils/uppercase-keys]</span><span class="delimiter">: </span><span class="description">convert each object key to uppercase.</span>
+-   <span class="package-name">[`@stdlib/object/capitalize-keys`][@stdlib/object/capitalize-keys]</span><span class="delimiter">: </span><span class="description">convert the first letter of each object key to uppercase.</span>
+-   <span class="package-name">[`@stdlib/utils/lowercase-keys`][@stdlib/utils/lowercase-keys]</span><span class="delimiter">: </span><span class="description">convert each object key to lowercase.</span>
 
 </section>
 
@@ -128,9 +128,9 @@ console.dir( obj2 );
 
 <!-- <related-links> -->
 
-[@stdlib/object/uncapitalize-keys]: https://github.com/stdlib-js/object/tree/main/uncapitalize-keys
+[@stdlib/object/capitalize-keys]: https://github.com/stdlib-js/object/tree/main/capitalize-keys
 
-[@stdlib/utils/uppercase-keys]: https://github.com/stdlib-js/utils-uppercase-keys
+[@stdlib/utils/lowercase-keys]: https://github.com/stdlib-js/utils-lowercase-keys
 
 <!-- </related-links> -->
 
