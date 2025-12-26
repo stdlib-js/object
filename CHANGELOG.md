@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`8b9db49`](https://github.com/stdlib-js/stdlib/commit/8b9db493ba440e87a49ae018cb2b80067ae16811) - add `object/common-keys`
 -   [`34f3fd7`](https://github.com/stdlib-js/stdlib/commit/34f3fd7466ac4ca3d338627488ac682393e59742) - add `object/for-own`
 -   [`c0a74ec`](https://github.com/stdlib-js/stdlib/commit/c0a74ecefccbca56319a1a01af9854dec151ea29) - add `object/for-in`
 -   [`e13f91a`](https://github.com/stdlib-js/stdlib/commit/e13f91ad104de85f5f1bae9de341bee7e49d8041) - add `object/uppercase-keys`
@@ -50,6 +51,7 @@
 
 <details>
 
+-   [`8b9db49`](https://github.com/stdlib-js/stdlib/commit/8b9db493ba440e87a49ae018cb2b80067ae16811) - **feat:** add `object/common-keys` _(by Neeraj Pathak)_
 -   [`7d4e28d`](https://github.com/stdlib-js/stdlib/commit/7d4e28db4260c8a521bd104f17183b2462205e41) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`34f3fd7`](https://github.com/stdlib-js/stdlib/commit/34f3fd7466ac4ca3d338627488ac682393e59742) - **feat:** add `object/for-own` _(by Neeraj Pathak)_
 -   [`c0a74ec`](https://github.com/stdlib-js/stdlib/commit/c0a74ecefccbca56319a1a01af9854dec151ea29) - **feat:** add `object/for-in` _(by Neeraj Pathak)_
