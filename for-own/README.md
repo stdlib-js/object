@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# forIn
+# forOwn
 
-> Invoke a function for each own and inherited enumerable property of an object.
+> Invoke a function for each own enumerable property of an object.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,30 +37,26 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var forIn = require( '@stdlib/object/for-in' );
+var forOwn = require( '@stdlib/object/for-own' );
 ```
 
-#### forIn( obj, fcn\[, thisArg ] )
+#### forOwn( obj, fcn\[, thisArg ] )
 
-Invokes a `function` for each own and inherited enumerable property of an `object`.
+Invokes a `function` for each own enumerable property of an `object`.
 
 ```javascript
 function log( value, key ) {
     console.log( '%s: %d', key, value );
 }
 
-function Foo() {
-    this.a = 1;
-    this.b = 2;
-    return this;
-}
+var obj = {
+    'a': 1,
+    'b': 2,
+    'c': 3,
+    'd': 4
+};
 
-Foo.prototype.c = 3;
-Foo.prototype.d = 4;
-
-var obj = new Foo();
-
-forIn( obj, log );
+forOwn( obj, log );
 /* e.g., =>
     a: 1
     b: 2
@@ -90,7 +86,7 @@ var obj = {
     'd': 4
 };
 
-forIn( obj, log );
+forOwn( obj, log );
 // e.g., => a: 1
 ```
 
@@ -114,7 +110,7 @@ var context = {
     'count': 0
 };
 
-forIn( obj, sum, context );
+forOwn( obj, sum, context );
 
 var mean = context.sum / context.count;
 // returns 2.5
@@ -131,6 +127,7 @@ var mean = context.sum / context.count;
 ## Notes
 
 -   The function returns the input `object`.
+-   The function determines the list of own enumerable properties **before** invoking the provided function. Hence, any modifications made to the input `object` **after** calling this function (such as adding and removing properties) will **not** affect the list of visited properties.
 -   Property iteration order is **not** guaranteed.
 
 </section>
@@ -147,30 +144,24 @@ var mean = context.sum / context.count;
 
 ```javascript
 var fromCodePoint = require( '@stdlib/string/from-code-point' );
-var forIn = require( '@stdlib/object/for-in' );
+var forOwn = require( '@stdlib/object/for-own' );
 
 function update( value, key, obj ) {
     console.log( '%s: %d', key, value );
     obj[ key ] *= value;
 }
 
-function Foo() {
-    return this;
-}
-
-Foo.prototype.beep = 3.14;
-
 var obj;
 var key;
 var i;
 
-obj = new Foo();
+obj = {};
 for ( i = 0; i < 26; i++ ) {
     key = fromCodePoint( 97 + i );
     obj[ key ] = i;
 }
 
-forIn( obj, update );
+forOwn( obj, update );
 console.log( obj );
 ```
 
@@ -195,7 +186,7 @@ console.log( obj );
 ## See Also
 
 -   <span class="package-name">[`@stdlib/utils/for-each`][@stdlib/utils/for-each]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection.</span>
--   <span class="package-name">[`@stdlib/object/for-own`][@stdlib/object/for-own]</span><span class="delimiter">: </span><span class="description">invoke a function for each own enumerable property of an object.</span>
+-   <span class="package-name">[`@stdlib/object/for-in`][@stdlib/object/for-in]</span><span class="delimiter">: </span><span class="description">invoke a function for each own and inherited enumerable property of an object.</span>
 
 </section>
 
@@ -209,7 +200,7 @@ console.log( obj );
 
 [@stdlib/utils/for-each]: https://github.com/stdlib-js/utils-for-each
 
-[@stdlib/object/for-own]: https://github.com/stdlib-js/object/tree/main/for-own
+[@stdlib/object/for-in]: https://github.com/stdlib-js/object/tree/main/for-in
 
 <!-- </related-links> -->
 

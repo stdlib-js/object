@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-25)
+## Unreleased (2025-12-26)
 
 <section class="features">
 
 ### Features
 
+-   [`34f3fd7`](https://github.com/stdlib-js/stdlib/commit/34f3fd7466ac4ca3d338627488ac682393e59742) - add `object/for-own`
 -   [`c0a74ec`](https://github.com/stdlib-js/stdlib/commit/c0a74ecefccbca56319a1a01af9854dec151ea29) - add `object/for-in`
 -   [`e13f91a`](https://github.com/stdlib-js/stdlib/commit/e13f91ad104de85f5f1bae9de341bee7e49d8041) - add `object/uppercase-keys`
 -   [`c6d6ff7`](https://github.com/stdlib-js/stdlib/commit/c6d6ff70ac2b4e0ccbbc98e3d18b4aa1df3e7e88) - add `object/lowercase-keys`
@@ -49,6 +50,8 @@
 
 <details>
 
+-   [`7d4e28d`](https://github.com/stdlib-js/stdlib/commit/7d4e28db4260c8a521bd104f17183b2462205e41) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`34f3fd7`](https://github.com/stdlib-js/stdlib/commit/34f3fd7466ac4ca3d338627488ac682393e59742) - **feat:** add `object/for-own` _(by Neeraj Pathak)_
 -   [`c0a74ec`](https://github.com/stdlib-js/stdlib/commit/c0a74ecefccbca56319a1a01af9854dec151ea29) - **feat:** add `object/for-in` _(by Neeraj Pathak)_
 -   [`fbea12f`](https://github.com/stdlib-js/stdlib/commit/fbea12f6b9bda1fce997175ca3eaf574a89beb59) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`e13f91a`](https://github.com/stdlib-js/stdlib/commit/e13f91ad104de85f5f1bae9de341bee7e49d8041) - **feat:** add `object/uppercase-keys` _(by Neeraj Pathak)_
