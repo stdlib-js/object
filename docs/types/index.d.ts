@@ -1,0 +1,247 @@
+/*
+* @license Apache-2.0
+*
+* Copyright (c) 2022 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+// TypeScript Version: 4.1
+
+/* eslint-disable max-lines */
+
+import assign = require( './../../assign' );
+import assignIn = require( './../../assign-in' );
+import Object = require( './../../ctor' );
+import everyInBy = require( './../../every-in-by' );
+import everyOwnBy = require( './../../every-own-by' );
+import noneInBy = require( './../../none-in-by' );
+import someInBy = require( './../../some-in-by' );
+
+/**
+* Interface describing the `object` namespace.
+*/
+interface Namespace {
+	/**
+	* Copies own enumerable properties from one or more source objects to a target object.
+	*
+	* ## Notes
+	*
+	* -   If a property key is present in multiple sources, the property from the last source that defines the key prevails.
+	* -   The target object is mutated.
+	* -   Both string and symbol properties are copied.
+	*
+	* @param target - target object
+	* @param source - source object(s)
+	* @throws first argument must not be null or undefined
+	* @returns target object
+	*
+	* @example
+	* var obj1 = {
+	*     'a': 'beep'
+	* };
+	* var obj2 = {
+	*     'b': 'boop'
+	* };
+	*
+	* var out = ns.assign( obj1, obj2 );
+	* // returns { 'a': 'beep', 'b': 'boop' }
+	*/
+	assign: typeof assign;
+
+	/**
+	* Copies own and inherited enumerable properties from one or more source objects to a target object.
+	*
+	* ## Notes
+	*
+	* -   If a property key is present in multiple sources, the property from the last source that defines the key prevails.
+	* -   The target object is mutated.
+	* -   Both string and symbol properties are copied.
+	*
+	* @param target - target object
+	* @param source - source object(s)
+	* @throws first argument must not be null or undefined
+	* @returns target object
+	*
+	* @example
+	* function Foo() {
+	*     this.a = 1;
+	*     return this;
+	* }
+	*
+	* Foo.prototype.b = 2;
+	*
+	* function Bar() {
+	*     this.c = 3;
+	*     return this;
+	* }
+	*
+	* Bar.prototype.d = 4;
+	*
+	* var out = ns.assignIn( {}, new Foo(), new Bar() );
+	* // returns { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
+	*/
+	assignIn: typeof assignIn;
+
+	/**
+	* Returns an object.
+	*
+	* ## Notes
+	*
+	* -   If provided `null` or `undefined`, the function returns an empty object.
+	* -   If provided an existing object, the function returns the input value unchanged.
+	* -   Otherwise, if provided any other value (e.g., a number, string, etc), the function will return an object of the corresponding type.
+	*
+	* @param value - input value
+	* @returns object
+	*
+	* @example
+	* var o = new ns.Object( null );
+	* // returns {}
+	*
+	* @example
+	* var o = new ns.Object( 5.0 );
+	* // returns <Number>
+	*
+	* @example
+	* var o = new ns.Object( 'beep' );
+	* // returns <String>
+	*
+	* @example
+	* var o1 = {};
+	*
+	* var o2 = new ns.Object( o1 );
+	* // returns {}
+	*
+	* var bool = ( o1 === o2 );
+	* // returns true
+	*/
+	Object: typeof Object;
+
+	/**
+	* Checks whether all own and inherited properties in an object pass a test implemented by a predicate function.
+	*
+	* @param obj - object to iterate over
+	* @param predicate - test function to apply to each property
+	* @param thisArg - optional execution context for the predicate function
+	* @throws if `obj` is not an object or if `predicate` is not a function
+	* @returns boolean indicating whether all properties pass the test
+	*/
+	everyInBy: typeof everyInBy;
+
+	/**
+	* Tests whether every property of an object passes a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   The predicate function is provided three arguments:
+	*
+	*     -   `value`: collection value
+	*     -   `key`: collection key
+	*     -   `object`: the input object
+	*
+	* -   The function immediately returns upon encountering a truthy return value.
+	* -   If provided an empty object, the function returns `true`.
+	*
+	* @param object - input object
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns boolean indicating whether all own elements pass a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return ( v > 0 );
+	* }
+	*
+	* var obj = { 'a': 1, 'b': 2, 'c': 3 };
+	*
+	* var bool = ns.everyOwnBy( obj, isPositive );
+	* // returns true
+	*/
+	everyOwnBy: typeof everyOwnBy;
+
+	/**
+	* Tests whether every property in a object fail a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   The predicate function is provided three arguments:
+	*
+	*     -   `value`: property value
+	*     -   `key`: property key
+	*     -   `object`: the input object
+	*
+	* -   The function immediately returns upon encountering a truthy return value.
+	* -   If provided an empty object, the function returns `true`.
+	*
+	* @param object - input object
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @returns boolean indicating whether all property fails a test
+	*
+	* @example
+	* function isPositive( v ) {
+	*     return ( v > 0 );
+	* }
+	*
+	* var obj = { 'a': -1, 'b': -2, 'c': -3, 'd': -4 };
+	*
+	* var bool = ns.noneInBy( obj, isPositive );
+	* // returns true
+	*/
+	noneInBy: typeof noneInBy;
+
+	/**
+	* Tests whether an object contains at least `n` properties (own and inherited) which pass a test implemented by a predicate function.
+	*
+	* ## Notes
+	*
+	* -   The predicate function is provided three arguments:
+	*
+	*     -   `value`: object value
+	*     -   `key`: object key
+	*     -   `obj`: the input object
+	*
+	* -   The function immediately returns upon finding `n` successful properties.
+	*
+	* -   If provided an empty object, the function returns `false`.
+	*
+	* @param obj - input object
+	* @param n - number of properties
+	* @param predicate - test function
+	* @param thisArg - execution context
+	* @throws second argument must be a positive integer
+	* @returns boolean indicating whether an object contains at least `n` properties which pass a test
+	*
+	* @example
+	* function isNegative( v ) {
+	*     return ( v < 0 );
+	* }
+	*
+	* var obj = { 'a': 1, 'b': 2, 'c': -3, 'd': 4, 'e': -1 };
+	*
+	* var bool = ns.someInBy( obj, 2, isNegative );
+	* // returns true
+	*/
+	someInBy: typeof someInBy;
+}
+
+/**
+* Object.
+*/
+declare var ns: Namespace;
+
+
+// EXPORTS //
+
+export = ns;
