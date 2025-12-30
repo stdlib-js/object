@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-27)
+## Unreleased (2025-12-30)
 
 <section class="features">
 
 ### Features
 
+-   [`bf7b6d2`](https://github.com/stdlib-js/stdlib/commit/bf7b6d20576dd501c268cfe3fd098455c4fd31d8) - add `object/inverse-by`
 -   [`8c997ca`](https://github.com/stdlib-js/stdlib/commit/8c997ca516a851cc0cfe854bdc2f19ef6ccfc0c1) - add `object/common-keys-in`
 -   [`8b9db49`](https://github.com/stdlib-js/stdlib/commit/8b9db493ba440e87a49ae018cb2b80067ae16811) - add `object/common-keys`
 -   [`34f3fd7`](https://github.com/stdlib-js/stdlib/commit/34f3fd7466ac4ca3d338627488ac682393e59742) - add `object/for-own`
@@ -52,6 +53,7 @@
 
 <details>
 
+-   [`bf7b6d2`](https://github.com/stdlib-js/stdlib/commit/bf7b6d20576dd501c268cfe3fd098455c4fd31d8) - **feat:** add `object/inverse-by` _(by Neeraj Pathak)_
 -   [`8c997ca`](https://github.com/stdlib-js/stdlib/commit/8c997ca516a851cc0cfe854bdc2f19ef6ccfc0c1) - **feat:** add `object/common-keys-in` _(by Neeraj Pathak)_
 -   [`8b9db49`](https://github.com/stdlib-js/stdlib/commit/8b9db493ba440e87a49ae018cb2b80067ae16811) - **feat:** add `object/common-keys` _(by Neeraj Pathak)_
 -   [`7d4e28d`](https://github.com/stdlib-js/stdlib/commit/7d4e28db4260c8a521bd104f17183b2462205e41) - **refactor:** update paths _(by Neeraj Pathak)_
