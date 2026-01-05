@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-04)
+## Unreleased (2026-01-05)
 
 <section class="features">
 
 ### Features
 
+-   [`c87f6a8`](https://github.com/stdlib-js/stdlib/commit/c87f6a88410d8742df047cd1b656bfa2e3088b23) - add `object/bifurcate-in`
 -   [`a53615b`](https://github.com/stdlib-js/stdlib/commit/a53615b3210cdd787a16f1e8721d2d4e17153883) - add `object/inverse`
 -   [`bf7b6d2`](https://github.com/stdlib-js/stdlib/commit/bf7b6d20576dd501c268cfe3fd098455c4fd31d8) - add `object/inverse-by`
 -   [`8c997ca`](https://github.com/stdlib-js/stdlib/commit/8c997ca516a851cc0cfe854bdc2f19ef6ccfc0c1) - add `object/common-keys-in`
@@ -54,6 +55,8 @@
 
 <details>
 
+-   [`d72fd04`](https://github.com/stdlib-js/stdlib/commit/d72fd04a2081dae30650c5ba9ed842a9fdbfa25f) - **docs:** fix require paths in examples _(by Athan Reines)_
+-   [`c87f6a8`](https://github.com/stdlib-js/stdlib/commit/c87f6a88410d8742df047cd1b656bfa2e3088b23) - **feat:** add `object/bifurcate-in` _(by Neeraj Pathak)_
 -   [`46c47ec`](https://github.com/stdlib-js/stdlib/commit/46c47ec0c92f9a3608290ef8a6ca5cf0e9258866) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`a53615b`](https://github.com/stdlib-js/stdlib/commit/a53615b3210cdd787a16f1e8721d2d4e17153883) - **feat:** add `object/inverse` _(by Neeraj Pathak)_
 -   [`bf7b6d2`](https://github.com/stdlib-js/stdlib/commit/bf7b6d20576dd501c268cfe3fd098455c4fd31d8) - **feat:** add `object/inverse-by` _(by Neeraj Pathak)_
