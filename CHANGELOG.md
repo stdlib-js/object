@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-05)
+## Unreleased (2026-01-06)
 
 <section class="features">
 
@@ -55,6 +55,7 @@
 
 <details>
 
+-   [`56e8832`](https://github.com/stdlib-js/stdlib/commit/56e88323cf168461852ccdc301e81c61c40d5d3f) - **docs:** update related packages sections [(#9573)](https://github.com/stdlib-js/stdlib/pull/9573) _(by stdlib-bot)_
 -   [`d72fd04`](https://github.com/stdlib-js/stdlib/commit/d72fd04a2081dae30650c5ba9ed842a9fdbfa25f) - **docs:** fix require paths in examples _(by Athan Reines)_
 -   [`c87f6a8`](https://github.com/stdlib-js/stdlib/commit/c87f6a88410d8742df047cd1b656bfa2e3088b23) - **feat:** add `object/bifurcate-in` _(by Neeraj Pathak)_
 -   [`46c47ec`](https://github.com/stdlib-js/stdlib/commit/46c47ec0c92f9a3608290ef8a6ca5cf0e9258866) - **refactor:** update paths _(by Neeraj Pathak)_
