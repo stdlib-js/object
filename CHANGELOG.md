@@ -43,6 +43,7 @@
 
 ### Bug Fixes
 
+-   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - update TypeScript definitions to use `keys` instead of `indices`
 -   [`0371c46`](https://github.com/stdlib-js/stdlib/commit/0371c4601c1767f36cffd00a77b6caf96de9478c) - add missing `thisArg` parameter
 
 </section>
@@ -55,6 +56,8 @@
 
 <details>
 
+-   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - **fix:** update TypeScript definitions to use `keys` instead of `indices` _(by Philipp Burckhardt)_
+-   [`7e63571`](https://github.com/stdlib-js/stdlib/commit/7e63571d1ad59b012697ee2ce76e3ca3ac008e7e) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`56e8832`](https://github.com/stdlib-js/stdlib/commit/56e88323cf168461852ccdc301e81c61c40d5d3f) - **docs:** update related packages sections [(#9573)](https://github.com/stdlib-js/stdlib/pull/9573) _(by stdlib-bot)_
 -   [`d72fd04`](https://github.com/stdlib-js/stdlib/commit/d72fd04a2081dae30650c5ba9ed842a9fdbfa25f) - **docs:** fix require paths in examples _(by Athan Reines)_
 -   [`c87f6a8`](https://github.com/stdlib-js/stdlib/commit/c87f6a88410d8742df047cd1b656bfa2e3088b23) - **feat:** add `object/bifurcate-in` _(by Neeraj Pathak)_
