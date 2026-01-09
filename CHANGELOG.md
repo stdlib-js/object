@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-06)
+## Unreleased (2026-01-09)
 
 <section class="features">
 
@@ -56,6 +56,7 @@
 
 <details>
 
+-   [`ef3792c`](https://github.com/stdlib-js/stdlib/commit/ef3792ccdbdc29b705429f08d8be976f727f8ccf) - **docs:** update related packages sections [(#9639)](https://github.com/stdlib-js/stdlib/pull/9639) _(by stdlib-bot)_
 -   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - **fix:** update TypeScript definitions to use `keys` instead of `indices` _(by Philipp Burckhardt)_
 -   [`7e63571`](https://github.com/stdlib-js/stdlib/commit/7e63571d1ad59b012697ee2ce76e3ca3ac008e7e) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`56e8832`](https://github.com/stdlib-js/stdlib/commit/56e88323cf168461852ccdc301e81c61c40d5d3f) - **docs:** update related packages sections [(#9573)](https://github.com/stdlib-js/stdlib/pull/9573) _(by stdlib-bot)_
