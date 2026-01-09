@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# bifurcateIn
+# bifurcateOwn
 
-> Split an object's **own** and **inherited** property values into two groups according to a predicate function.
+> Split an object's **own** property values into two groups according to a predicate function.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,31 +37,25 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var bifurcateIn = require( '@stdlib/object/bifurcate-in' );
+var bifurcateOwn = require( '@stdlib/object/bifurcate-own' );
 ```
 
-#### bifurcateIn( obj, \[options,] predicate )
+#### bifurcateOwn( obj, \[options,] predicate )
 
-Splits an object's **own** and **inherited** property values into two groups according to a `predicate` function, which specifies which group a value in the input `object` belongs to. If a `predicate` function returns a truthy value, a value belongs to the first group; otherwise, a value belongs to the second group.
+Splits an object's **own** property values into two groups according to a `predicate` function, which specifies which group a value in the input `object` belongs to. If a `predicate` function returns a truthy value, a value belongs to the first group; otherwise, a value belongs to the second group.
 
 ```javascript
 function predicate( v ) {
     return v[ 0 ] === 'b';
 }
+var obj = {
+    'a': 'beep',
+    'b': 'boop',
+    'c': 'foo',
+    'd': 'bar'
+};
 
-function Foo() {
-    this.a = 'beep';
-    this.b = 'boop';
-    return this;
-}
-
-Foo.prototype = Object.create( null );
-Foo.prototype.c = 'foo';
-Foo.prototype.d = 'bar';
-
-var obj = new Foo();
-
-var out = bifurcateIn( obj, predicate );
+var out = bifurcateOwn( obj, predicate );
 // e.g., returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 ```
 
@@ -75,19 +69,14 @@ function predicate( v, k ) {
     console.log( '%s: %s', k, v );
     return v[ 0 ] === 'b';
 }
-function Foo() {
-    this.a = 'beep';
-    this.b = 'boop';
-    return this;
-}
+var obj = {
+    'a': 'beep',
+    'b': 'boop',
+    'c': 'foo',
+    'd': 'bar'
+};
 
-Foo.prototype = Object.create( null );
-Foo.prototype.c = 'foo';
-Foo.prototype.d = 'bar';
-
-var obj = new Foo();
-
-var out = bifurcateIn( obj, predicate );
+var out = bifurcateOwn( obj, predicate );
 // e.g., returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 ```
 
@@ -102,22 +91,17 @@ By default, the function returns object values. To return object keys, set the `
 function predicate( v ) {
     return v[ 0 ] === 'b';
 }
-function Foo() {
-    this.a = 'beep';
-    this.b = 'boop';
-    return this;
-}
-
-Foo.prototype = Object.create( null );
-Foo.prototype.c = 'foo';
-Foo.prototype.d = 'bar';
-
-var obj = new Foo();
+var obj = {
+    'a': 'beep',
+    'b': 'boop',
+    'c': 'foo',
+    'd': 'bar'
+};
 
 var opts = {
     'returns': 'keys'
 };
-var out = bifurcateIn( obj, opts, predicate );
+var out = bifurcateOwn( obj, opts, predicate );
 // e.g., returns [ [ 'a', 'b', 'd' ], [ 'c' ] ]
 ```
 
@@ -127,22 +111,17 @@ To return key-value pairs, set the `returns` option to `'*'`.
 function predicate( v ) {
     return v[ 0 ] === 'b';
 }
-function Foo() {
-    this.a = 'beep';
-    this.b = 'boop';
-    return this;
-}
-
-Foo.prototype = Object.create( null );
-Foo.prototype.c = 'foo';
-Foo.prototype.d = 'bar';
-
-var obj = new Foo();
+var obj = {
+    'a': 'beep',
+    'b': 'boop',
+    'c': 'foo',
+    'd': 'bar'
+};
 
 var opts = {
     'returns': '*'
 };
-var out = bifurcateIn( obj, opts, predicate );
+var out = bifurcateOwn( obj, opts, predicate );
 // e.g., returns [ [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], [ [ 'c', 'foo' ] ] ]
 ```
 
@@ -153,26 +132,19 @@ function predicate( v ) {
     this.count += 1;
     return v[ 0 ] === 'b';
 }
-
-function Foo() {
-    this.a = 'beep';
-    this.b = 'boop';
-    return this;
-}
-
-Foo.prototype = Object.create( null );
-Foo.prototype.c = 'foo';
-Foo.prototype.d = 'bar';
-
-var obj = new Foo();
-
 var context = {
     'count': 0
 };
 var opts = {
     'thisArg': context
 };
-var out = bifurcateIn( obj, opts, predicate );
+var obj = {
+    'a': 'beep',
+    'b': 'boop',
+    'c': 'foo',
+    'd': 'bar'
+};
+var out = bifurcateOwn( obj, opts, predicate );
 // e.g., returns [ [ 'beep', 'boop', 'bar' ], [ 'foo' ] ]
 
 console.log( context.count );
@@ -191,7 +163,7 @@ console.log( context.count );
 
 -   Iteration order is **not** guaranteed, as `object` key enumeration is not specified according to the [ECMAScript specification][ecma-262-for-in]. In practice, however, most engines use insertion order to sort an `object`'s keys, thus allowing for deterministic iteration.
 -   Because iteration order is **not** guaranteed, result order is **not** guaranteed.
--   The function determines the list of own **and** inherited enumerable properties **before** invoking the provided function. Hence, any modifications made to the input `object` **after** calling this function (such as adding and removing properties) will **not** affect the list of visited properties.
+-   The function determines the list of own enumerable properties **before** invoking the provided function. Hence, any modifications made to the input `object` **after** calling this function (such as adding and removing properties) will **not** affect the list of visited properties.
 
 </section>
 
@@ -208,41 +180,26 @@ console.log( context.count );
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
 var fromCodePoint = require( '@stdlib/string/from-code-point' );
-var bifurcateIn = require( '@stdlib/object/bifurcate-in' );
+var bifurcateOwn = require( '@stdlib/object/bifurcate-own' );
 
-var opts;
 var key;
 var obj;
 var out;
 var i;
 
-function Foo() {
-    var key;
-    var i;
-    for ( i = 0; i < 50; i++ ) {
-        key = fromCodePoint( 147+i );
-        this[ key ] = randu();
-    }
-    return this;
-}
-
-Foo.prototype = Object.create( null );
-for ( i = 0; i < 50; i++ ) {
+// Generate a random object...
+obj = {};
+for ( i = 0; i < 100; i++ ) {
     key = fromCodePoint( 97+i );
-    Foo.prototype[ key ] = randu();
+    obj[ key ] = randu();
 }
 
-// Generate a random object:
-obj = new Foo();
-
-// Compute the groups...
 function predicate( v ) {
     return ( v < 0.5 );
 }
-opts = {
-    'returns': '*'
-};
-out = bifurcateIn( obj, opts, predicate );
+
+// Compute the groups:
+out = bifurcateOwn( obj, predicate );
 console.log( out );
 ```
 
@@ -268,8 +225,8 @@ console.log( out );
 
 -   <span class="package-name">[`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]</span><span class="delimiter">: </span><span class="description">split values into two groups.</span>
 -   <span class="package-name">[`@stdlib/utils/bifurcate-by`][@stdlib/utils/bifurcate-by]</span><span class="delimiter">: </span><span class="description">split values into two groups according to a predicate function.</span>
--   <span class="package-name">[`@stdlib/object/bifurcate-own`][@stdlib/object/bifurcate-own]</span><span class="delimiter">: </span><span class="description">split an object's own property values into two groups according to a predicate function.</span>
--   <span class="package-name">[`@stdlib/utils/group-in`][@stdlib/utils/group-in]</span><span class="delimiter">: </span><span class="description">group an object's own and inherited property values according to an indicator function.</span>
+-   <span class="package-name">[`@stdlib/object/bifurcate-in`][@stdlib/object/bifurcate-in]</span><span class="delimiter">: </span><span class="description">split an object's own and inherited property values into two groups according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/group-own`][@stdlib/utils/group-own]</span><span class="delimiter">: </span><span class="description">group an object's own property values according to an indicator function.</span>
 
 </section>
 
@@ -287,9 +244,9 @@ console.log( out );
 
 [@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils-bifurcate-by
 
-[@stdlib/object/bifurcate-own]: https://github.com/stdlib-js/object/tree/main/bifurcate-own
+[@stdlib/object/bifurcate-in]: https://github.com/stdlib-js/object/tree/main/bifurcate-in
 
-[@stdlib/utils/group-in]: https://github.com/stdlib-js/utils-group-in
+[@stdlib/utils/group-own]: https://github.com/stdlib-js/utils-group-own
 
 <!-- </related-links> -->
 

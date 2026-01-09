@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2e1dd2a`](https://github.com/stdlib-js/stdlib/commit/2e1dd2a67c285b42e70077e0214b982fe18a55a2) - add `object/bifurcate-own`
 -   [`c87f6a8`](https://github.com/stdlib-js/stdlib/commit/c87f6a88410d8742df047cd1b656bfa2e3088b23) - add `object/bifurcate-in`
 -   [`a53615b`](https://github.com/stdlib-js/stdlib/commit/a53615b3210cdd787a16f1e8721d2d4e17153883) - add `object/inverse`
 -   [`bf7b6d2`](https://github.com/stdlib-js/stdlib/commit/bf7b6d20576dd501c268cfe3fd098455c4fd31d8) - add `object/inverse-by`
@@ -56,6 +57,8 @@
 
 <details>
 
+-   [`c8bd14e`](https://github.com/stdlib-js/stdlib/commit/c8bd14eed3693ab50a341bdb9a24cf98cc64bf60) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`2e1dd2a`](https://github.com/stdlib-js/stdlib/commit/2e1dd2a67c285b42e70077e0214b982fe18a55a2) - **feat:** add `object/bifurcate-own` _(by Neeraj Pathak)_
 -   [`ef3792c`](https://github.com/stdlib-js/stdlib/commit/ef3792ccdbdc29b705429f08d8be976f727f8ccf) - **docs:** update related packages sections [(#9639)](https://github.com/stdlib-js/stdlib/pull/9639) _(by stdlib-bot)_
 -   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - **fix:** update TypeScript definitions to use `keys` instead of `indices` _(by Philipp Burckhardt)_
 -   [`7e63571`](https://github.com/stdlib-js/stdlib/commit/7e63571d1ad59b012697ee2ce76e3ca3ac008e7e) - **chore:** minor clean-up _(by Philipp Burckhardt)_
