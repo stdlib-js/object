@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-09)
+## Unreleased (2026-01-10)
 
 <section class="features">
 
@@ -57,6 +57,7 @@
 
 <details>
 
+-   [`6f08c1e`](https://github.com/stdlib-js/stdlib/commit/6f08c1e408e4b75314ef3c9a175c91ed2a266eea) - **docs:** fix description _(by Philipp Burckhardt)_
 -   [`c8bd14e`](https://github.com/stdlib-js/stdlib/commit/c8bd14eed3693ab50a341bdb9a24cf98cc64bf60) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`2e1dd2a`](https://github.com/stdlib-js/stdlib/commit/2e1dd2a67c285b42e70077e0214b982fe18a55a2) - **feat:** add `object/bifurcate-own` _(by Neeraj Pathak)_
 -   [`ef3792c`](https://github.com/stdlib-js/stdlib/commit/ef3792ccdbdc29b705429f08d8be976f727f8ccf) - **docs:** update related packages sections [(#9639)](https://github.com/stdlib-js/stdlib/pull/9639) _(by stdlib-bot)_
