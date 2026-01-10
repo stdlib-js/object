@@ -57,6 +57,7 @@
 
 <details>
 
+-   [`bfc8c3a`](https://github.com/stdlib-js/stdlib/commit/bfc8c3a7bcebf1a049c9e457ab440f540fd5c7a9) - **chore:** use one asterisk for license comment in TS files _(by Philipp Burckhardt)_
 -   [`6f08c1e`](https://github.com/stdlib-js/stdlib/commit/6f08c1e408e4b75314ef3c9a175c91ed2a266eea) - **docs:** fix description _(by Philipp Burckhardt)_
 -   [`c8bd14e`](https://github.com/stdlib-js/stdlib/commit/c8bd14eed3693ab50a341bdb9a24cf98cc64bf60) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`2e1dd2a`](https://github.com/stdlib-js/stdlib/commit/2e1dd2a67c285b42e70077e0214b982fe18a55a2) - **feat:** add `object/bifurcate-own` _(by Neeraj Pathak)_
