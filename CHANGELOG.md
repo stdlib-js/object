@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-10)
+## Unreleased (2026-01-14)
 
 <section class="features">
 
 ### Features
 
+-   [`2e20261`](https://github.com/stdlib-js/stdlib/commit/2e202614b34a0dedadc99d69ae8516d2f2524710) - add `object/deep-set`
 -   [`bfbb4d1`](https://github.com/stdlib-js/stdlib/commit/bfbb4d12bfeed5c11da8384a5ab94935259eec82) - add `object/deep-get`
 -   [`2e1dd2a`](https://github.com/stdlib-js/stdlib/commit/2e1dd2a67c285b42e70077e0214b982fe18a55a2) - add `object/bifurcate-own`
 -   [`c87f6a8`](https://github.com/stdlib-js/stdlib/commit/c87f6a88410d8742df047cd1b656bfa2e3088b23) - add `object/bifurcate-in`
@@ -58,6 +59,8 @@
 
 <details>
 
+-   [`fb171e3`](https://github.com/stdlib-js/stdlib/commit/fb171e313f8973bd4cd7d873f89f8b248b2cf14e) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`2e20261`](https://github.com/stdlib-js/stdlib/commit/2e202614b34a0dedadc99d69ae8516d2f2524710) - **feat:** add `object/deep-set` _(by Neeraj Pathak)_
 -   [`bfbb4d1`](https://github.com/stdlib-js/stdlib/commit/bfbb4d12bfeed5c11da8384a5ab94935259eec82) - **feat:** add `object/deep-get` _(by Neeraj Pathak)_
 -   [`bfc8c3a`](https://github.com/stdlib-js/stdlib/commit/bfc8c3a7bcebf1a049c9e457ab440f540fd5c7a9) - **chore:** use one asterisk for license comment in TS files _(by Philipp Burckhardt)_
 -   [`6f08c1e`](https://github.com/stdlib-js/stdlib/commit/6f08c1e408e4b75314ef3c9a175c91ed2a266eea) - **docs:** fix description _(by Philipp Burckhardt)_
