@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-14)
+## Unreleased (2026-01-16)
 
 <section class="features">
 
@@ -59,6 +59,7 @@
 
 <details>
 
+-   [`57ab662`](https://github.com/stdlib-js/stdlib/commit/57ab662159582de03be649f2414066a5387b8fd2) - **docs:** update description in `object/deep-set` [(#9735)](https://github.com/stdlib-js/stdlib/pull/9735) _(by Neeraj Pathak, Athan Reines)_
 -   [`fb171e3`](https://github.com/stdlib-js/stdlib/commit/fb171e313f8973bd4cd7d873f89f8b248b2cf14e) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`2e20261`](https://github.com/stdlib-js/stdlib/commit/2e202614b34a0dedadc99d69ae8516d2f2524710) - **feat:** add `object/deep-set` _(by Neeraj Pathak)_
 -   [`bfbb4d1`](https://github.com/stdlib-js/stdlib/commit/bfbb4d12bfeed5c11da8384a5ab94935259eec82) - **feat:** add `object/deep-get` _(by Neeraj Pathak)_
