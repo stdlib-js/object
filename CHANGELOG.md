@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-16)
+## Unreleased (2026-01-18)
 
 <section class="features">
 
 ### Features
 
+-   [`fc99e79`](https://github.com/stdlib-js/stdlib/commit/fc99e79e5cc20a58d1bb69644fdda25f2370474d) - add packages to object namespace
 -   [`2e20261`](https://github.com/stdlib-js/stdlib/commit/2e202614b34a0dedadc99d69ae8516d2f2524710) - add `object/deep-set`
 -   [`bfbb4d1`](https://github.com/stdlib-js/stdlib/commit/bfbb4d12bfeed5c11da8384a5ab94935259eec82) - add `object/deep-get`
 -   [`2e1dd2a`](https://github.com/stdlib-js/stdlib/commit/2e1dd2a67c285b42e70077e0214b982fe18a55a2) - add `object/bifurcate-own`
@@ -59,6 +60,7 @@
 
 <details>
 
+-   [`fc99e79`](https://github.com/stdlib-js/stdlib/commit/fc99e79e5cc20a58d1bb69644fdda25f2370474d) - **feat:** add packages to object namespace _(by Philipp Burckhardt)_
 -   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
 -   [`57ab662`](https://github.com/stdlib-js/stdlib/commit/57ab662159582de03be649f2414066a5387b8fd2) - **docs:** update description in `object/deep-set` [(#9735)](https://github.com/stdlib-js/stdlib/pull/9735) _(by Neeraj Pathak, Athan Reines)_
 -   [`fb171e3`](https://github.com/stdlib-js/stdlib/commit/fb171e313f8973bd4cd7d873f89f8b248b2cf14e) - **refactor:** update paths _(by Neeraj Pathak)_
