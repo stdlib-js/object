@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-19)
+## Unreleased (2026-01-21)
 
 <section class="features">
 
@@ -61,6 +61,7 @@
 
 <details>
 
+-   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
 -   [`717d578`](https://github.com/stdlib-js/stdlib/commit/717d5781130080c98d0a6f205cda38f24c62a3d9) - **feat:** update `object` TypeScript declarations [(#9827)](https://github.com/stdlib-js/stdlib/pull/9827) _(by stdlib-bot)_
 -   [`fc99e79`](https://github.com/stdlib-js/stdlib/commit/fc99e79e5cc20a58d1bb69644fdda25f2370474d) - **feat:** add packages to object namespace _(by Philipp Burckhardt)_
 -   [`0472076`](https://github.com/stdlib-js/stdlib/commit/04720767c484e6277ad9411dff3dc5a116c31378) - **docs:** remove duplicated words in documentation and comments _(by Philipp Burckhardt)_
