@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-21)
+## Unreleased (2026-02-25)
 
 <section class="features">
 
@@ -61,6 +61,7 @@
 
 <details>
 
+-   [`4fb4995`](https://github.com/stdlib-js/stdlib/commit/4fb49958095bee6d0cfee8b5d63fcfdf94f87e6e) - **docs:** fix missing and malformed section tags in README files _(by Philipp Burckhardt)_
 -   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
 -   [`717d578`](https://github.com/stdlib-js/stdlib/commit/717d5781130080c98d0a6f205cda38f24c62a3d9) - **feat:** update `object` TypeScript declarations [(#9827)](https://github.com/stdlib-js/stdlib/pull/9827) _(by stdlib-bot)_
 -   [`fc99e79`](https://github.com/stdlib-js/stdlib/commit/fc99e79e5cc20a58d1bb69644fdda25f2370474d) - **feat:** add packages to object namespace _(by Philipp Burckhardt)_
