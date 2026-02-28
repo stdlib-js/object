@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-25)
+## Unreleased (2026-02-28)
 
 <section class="features">
 
@@ -55,12 +55,25 @@
 
 <!-- /.bug-fixes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#10042](https://github.com/stdlib-js/stdlib/issues/10042)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`ebf2a0a`](https://github.com/stdlib-js/stdlib/commit/ebf2a0a88ad5d3400b62e9769c8095d9768e6e9a) - **chore:** fix JavaScript lint errors [(#10043)](https://github.com/stdlib-js/stdlib/pull/10043) _(by Bhargav Dabhade)_
 -   [`4fb4995`](https://github.com/stdlib-js/stdlib/commit/4fb49958095bee6d0cfee8b5d63fcfdf94f87e6e) - **docs:** fix missing and malformed section tags in README files _(by Philipp Burckhardt)_
 -   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
 -   [`717d578`](https://github.com/stdlib-js/stdlib/commit/717d5781130080c98d0a6f205cda38f24c62a3d9) - **feat:** update `object` TypeScript declarations [(#9827)](https://github.com/stdlib-js/stdlib/pull/9827) _(by stdlib-bot)_
@@ -139,9 +152,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Bhargav Dabhade
 -   Neeraj Pathak
 -   Philipp Burckhardt
 
