@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-23)
+## Unreleased (2026-04-20)
 
 <section class="features">
 
@@ -73,6 +73,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`f659410`](https://github.com/stdlib-js/stdlib/commit/f65941068b556d2947a62f8d190d17a819967a90) - **bench:** refactor to use string interpolation in `object` [(#11602)](https://github.com/stdlib-js/stdlib/pull/11602) _(by Karan Anand)_
 -   [`ebf2a0a`](https://github.com/stdlib-js/stdlib/commit/ebf2a0a88ad5d3400b62e9769c8095d9768e6e9a) - **chore:** fix JavaScript lint errors [(#10043)](https://github.com/stdlib-js/stdlib/pull/10043) _(by Bhargav Dabhade)_
 -   [`4fb4995`](https://github.com/stdlib-js/stdlib/commit/4fb49958095bee6d0cfee8b5d63fcfdf94f87e6e) - **docs:** fix missing and malformed section tags in README files _(by Philipp Burckhardt)_
 -   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
@@ -152,10 +153,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Bhargav Dabhade
+-   Karan Anand
 -   Neeraj Pathak
 -   Philipp Burckhardt
 
