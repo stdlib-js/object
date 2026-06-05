@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/object/tags). For example,
+
+```javascript
 import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.4.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Object, anyInBy, anyOwnBy, assign, assignIn, bifurcateIn, bifurcateOwn, capitalizeKeys, commonKeys, commonKeysIn, deepGet, deepSet, everyInBy, everyOwnBy, forIn, forOwn, inverse, inverseBy, lowercaseKeys, moveProperty, noneInBy, noneOwnBy, someInBy, someOwnBy, uncapitalizeKeys, uppercaseKeys } from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.4.1-deno/mod.js';
+import { Object, anyInBy, anyOwnBy, assign, assignIn, bifurcateIn, bifurcateOwn, capitalizeKeys, commonKeys, commonKeysIn, deepGet, deepSet, everyInBy, everyOwnBy, forIn, forOwn, inverse, inverseBy, lowercaseKeys, moveProperty, noneInBy, noneOwnBy, someInBy, someOwnBy, uncapitalizeKeys, uppercaseKeys } from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@deno/mod.js';
 ```
 
 #### ns
@@ -111,7 +116,7 @@ The namespace contains the following:
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.4.1-deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
