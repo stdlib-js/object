@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.4.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Object, anyInBy, anyOwnBy, assign, assignIn, bifurcateIn, bifurcateOwn, capitalizeKeys, commonKeys, commonKeysIn, deepGet, deepSet, everyInBy, everyOwnBy, forIn, forOwn, inverse, inverseBy, lowercaseKeys, moveProperty, noneInBy, noneOwnBy, someInBy, someOwnBy, uncapitalizeKeys, uppercaseKeys } from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@esm/index.mjs';
+import { Object, anyInBy, anyOwnBy, assign, assignIn, bifurcateIn, bifurcateOwn, capitalizeKeys, commonKeys, commonKeysIn, deepGet, deepSet, everyInBy, everyOwnBy, forIn, forOwn, inverse, inverseBy, lowercaseKeys, moveProperty, noneInBy, noneOwnBy, someInBy, someOwnBy, uncapitalizeKeys, uppercaseKeys } from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.4.1-esm/index.mjs';
 ```
 
 #### ns
@@ -116,7 +116,7 @@ The namespace contains the following:
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/object@v0.4.1-esm/index.mjs';
 
 console.log( objectKeys( ns ) );
 
