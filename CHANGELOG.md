@@ -2,6 +2,53 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-06-28)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#13173](https://github.com/stdlib-js/stdlib/issues/13173)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`867f144`](https://github.com/stdlib-js/stdlib/commit/867f144e8ac55f374a93ffb9ae2b9e025dd4a9da) - **chore:** fix JavaScript lint errors [(#13175)](https://github.com/stdlib-js/stdlib/pull/13175) _(by Akanksha Kumari, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Akanksha Kumari
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.4.1">
 
 ## 0.4.1 (2026-06-05)
