@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-09-10)
+## Unreleased (2026-11-20)
 
 <section class="issues">
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#13173](https://github.com/stdlib-js/stdlib/issues/13173)
+[#13173](https://github.com/stdlib-js/stdlib/issues/13173), [#16698](https://github.com/stdlib-js/stdlib/issues/16698)
 
 </section>
 
@@ -24,6 +24,9 @@ This release closes the following issue:
 
 <details>
 
+-   [`9dab10f`](https://github.com/stdlib-js/stdlib/commit/9dab10f42477d447f393a6a2861a13f0d803fa9f) - **chore:** fix JavaScript lint errors [(#16729)](https://github.com/stdlib-js/stdlib/pull/16729) _(by Aryan Sachin)_
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
+-   [`7bf6853`](https://github.com/stdlib-js/stdlib/commit/7bf68530dd12fe22f2ec82d68e1f9a591ab042c0) - **chore:** clean-up [(#16303)](https://github.com/stdlib-js/stdlib/pull/16303) _(by Philipp Burckhardt)_
 -   [`513eef6`](https://github.com/stdlib-js/stdlib/commit/513eef6f9c2c70bff4dc3c0a719d4c6dbfe2e8a4) - **docs:** add missing space and fix punctuation [(#14226)](https://github.com/stdlib-js/stdlib/pull/14226) _(by Philipp Burckhardt)_
 -   [`54a33d7`](https://github.com/stdlib-js/stdlib/commit/54a33d767845c7fa9ca0373be414ae0ba95a478f) - **docs:** update related packages sections [(#13870)](https://github.com/stdlib-js/stdlib/pull/13870) _(by stdlib-bot)_
 -   [`a9ded39`](https://github.com/stdlib-js/stdlib/commit/a9ded39203d2cbc9ff79b0cc96f0fbd2a962b36f) - **chore:** clean-up [(#12446)](https://github.com/stdlib-js/stdlib/pull/12446) _(by Philipp Burckhardt, Athan Reines)_
@@ -40,9 +43,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Akanksha Kumari
+-   Aryan Sachin
 -   Athan Reines
 -   Philipp Burckhardt
 
