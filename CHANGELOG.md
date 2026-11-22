@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-20)
+## Unreleased (2026-11-22)
 
 <section class="issues">
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#13173](https://github.com/stdlib-js/stdlib/issues/13173), [#16698](https://github.com/stdlib-js/stdlib/issues/16698)
+[#13173](https://github.com/stdlib-js/stdlib/issues/13173), [#16698](https://github.com/stdlib-js/stdlib/issues/16698), [#16737](https://github.com/stdlib-js/stdlib/issues/16737)
 
 </section>
 
@@ -24,6 +24,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`aab3c9f`](https://github.com/stdlib-js/stdlib/commit/aab3c9f3270365ef2d295a28225a20c594c190b7) - **chore:** fix JavaScript lint errors [(#16742)](https://github.com/stdlib-js/stdlib/pull/16742) _(by Shresth Singh, Athan Reines)_
 -   [`9dab10f`](https://github.com/stdlib-js/stdlib/commit/9dab10f42477d447f393a6a2861a13f0d803fa9f) - **chore:** fix JavaScript lint errors [(#16729)](https://github.com/stdlib-js/stdlib/pull/16729) _(by Aryan Sachin)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`7bf6853`](https://github.com/stdlib-js/stdlib/commit/7bf68530dd12fe22f2ec82d68e1f9a591ab042c0) - **chore:** clean-up [(#16303)](https://github.com/stdlib-js/stdlib/pull/16303) _(by Philipp Burckhardt)_
@@ -43,12 +44,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Akanksha Kumari
 -   Aryan Sachin
 -   Athan Reines
 -   Philipp Burckhardt
+-   Shresth Singh
 
 </section>
 
